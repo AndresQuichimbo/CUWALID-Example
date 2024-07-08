@@ -19,7 +19,7 @@ It should print out your python version if everything is working correctly
 
 Now create a virtual environment (This step is recommended but not technically necessary) by running the following command:
 ```
-python -m venv venv_name
+python -m venv test_env
 source test_env/bin/activate  # On Windows use `test_env\Scripts\activate`
 ```
 Now your environment is created and is activated
