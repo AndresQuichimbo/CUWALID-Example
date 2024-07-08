@@ -29,7 +29,7 @@ Now you will need to install the package, during this step it will ask for an AP
 
 Run the command:
 ```
-pip install -i https://test.pypi.org/simple/ CUWALID
+pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple CUWALID
 ```
 
 API TOKEN (DON'T SHARE) *It includes the begginging part -> 'pypi-':
