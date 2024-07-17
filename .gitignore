@@ -1,2 +1,5 @@
 venv
+.vscode/
 test_output
+stopet_output
+test_env/
