@@ -25,16 +25,11 @@ source test_env/bin/activate  # On Windows use `test_env\Scripts\activate`
 Now your environment is created and is activated
 
 ## Step 3:
-Now you will need to install the package, during this step it will ask for an API token which i have left at the bottom of this step to copy and paste into the terminal.
+Now you can install the package,
 
 Run the command:
 ```
 pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple CUWALID
-```
-
-API TOKEN (DON'T SHARE) *It includes the begginging part -> 'pypi-':
-```
-pypi-AgENdGVzdC5weXBpLm9yZwIkYjc3NjM5YWUtNzZlZi00YzZkLWI1YTAtYzc5YTI4ZmYwY2E5AAIPWzEsWyJjdXdhbGlkIl1dAAIsWzIsWyJjNzRlYTk4My0yNmI4LTRlM2ItYWFlMy0wZGI0NjczMjM4YzQiXV0AAAYgHQJagS3PIv8C5N3H0IhAb3x5jOaLZvDLqK2fbwHdzJ4
 ```
 
 Hopefully this will run without any errors and all other necessary packages will be installed.
