@@ -80,7 +80,7 @@ input/example-inputs/test_SM_points.csv
 Groundwater point results ----------------------(79):
 input/example-inputs/test_well_point_m.csv
 Folder location results ------------------------(81):
-test_output/
+dryp_output/
 Other ------------------------------------------(83):
 none
 Other ------------------------------------------(85):
