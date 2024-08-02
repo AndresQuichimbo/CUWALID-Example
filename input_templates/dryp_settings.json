@@ -1,0 +1,43 @@
+{
+    "SETTINGS": {
+      "start_date": null,
+      "end_date": null,
+      "dt_of": null,
+      "dt_gw": null
+    },
+    "READING": {
+      "data_read": null,
+      "data_step": null,
+      "data_reproject": null,
+      "data_interp": null
+    },
+    "COMPONENTS": {
+      "method_inf": null,
+      "method_gw": null,
+      "not used 1": null,
+      "not used 2": null
+    },
+    "OUTPUT": {
+      "output_csv": null,
+      "output_grid": null,
+      "output_dt": null,
+      "not used 1": null,
+      "Save discharge in volumetric rate units": null,
+      "not used 2": null,
+      "not used 3": null
+    },
+    "GLOBAL_FACTORS": {
+      "factor_uz_kdt": null,
+      "factor_uz_kdroot": null,
+      "factor_uz_kawc": null,
+      "factor_uz_kkast": null,
+      "factor_uz_ksigma": null,
+      "factor_riv_kksat": null,
+      "factor_riv_kdecay": null,
+      "factor_riv_kwidth": null,
+      "factor_sz_kksat": null,
+      "factor_sz_ksy": null,
+      "factor_of_kflow": null
+    }
+  }
+  

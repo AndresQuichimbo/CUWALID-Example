@@ -1,0 +1,61 @@
+{
+    "drylandmodel": {
+        "model_name": null
+    },
+    "TERRAIN": {
+        "path_dem": null,
+        "path_Qo": null,
+        "path_fdl": null,
+        "path_riv_decay": null,
+        "path_mask": null,
+        "path_riv_len": null,
+        "path_riv_width": null,
+        "path_riv_elev": null
+    },
+    "VEGETATION": {
+        "path_veg_kc": null,
+        "path_veg_lulc": null,
+        "path_veg_nn": null
+    },
+    "UNSATURATED": {
+        "path_uz_theta_sat": null,
+        "path_uz_theta_res": null,
+        "path_uz_theta_awc": null,
+        "path_uz_theta_wp": null,
+        "path_uz_root": null,
+        "path_uz_lambda": null,
+        "path_uz_psi": null,
+        "path_uz_ksat": null,
+        "path_uz_sigmaksat": null,
+        "path_uz_theta": null,
+        "path_riv_ksat": null
+    },
+    "SATURATED": {
+        "path_sz_mask": null,
+        "path_sz_ksat": null,
+        "path_sz_sy": null,
+        "path_sz_wte": null,
+        "path_sz_bc_flux": null,
+        "path_sz_bc_head": null,
+        "path_sz_bottom": null
+    },
+    "METEO": {
+        "path_pre": null,
+        "path_pet": null,
+        "path_aof": null,
+        "Other": null
+    },
+    "OUTPUT": {
+        "path_out_sz": null,
+        "path_out_uz": null,
+        "path_out_oz": null,
+        "path_output": null,
+        "Other": null,
+        "path_setting": null,
+        "path_gw_settings": null,
+        "path_vg_settings": null,
+        "path_rp_settings": null,
+        "path_of_settings": null,
+        "path_projection": null
+    }
+}
