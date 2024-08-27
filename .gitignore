@@ -3,3 +3,4 @@ venv
 stopet_output
 test_env/
 dryp_output
+output/

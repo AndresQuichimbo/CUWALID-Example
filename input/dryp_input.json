@@ -49,7 +49,7 @@
         "path_out_sz": "input/input_files/test_Flumes_points.csv",
         "path_out_uz": "input/input_files/test_SM_points.csv",
         "path_out_oz": "input/input_files/test_well_point_m.csv",
-        "path_output": "output",
+        "path_output": "dryp_output",
         "Other": null,
         "path_setting": "input//dryp_settings.json",
         "path_gw_settings": null,

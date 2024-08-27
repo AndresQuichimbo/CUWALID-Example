@@ -35,11 +35,11 @@ pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/
 Hopefully this will run without any errors and all other necessary packages will be installed.
 
 ## Step 4:
-In this GitHub repository is an example of the code you will need to run a simple model with DRYP, it includes a 'run.py' file that can be used to run the DRYP model, and a 'input' folder which contains the input for the model.
+In this GitHub repository is an example of the code you will need to run a simple model with DRYP, it includes a run files and some practice data for the dryp model. You can open the 'run_*' files to see how you can implement the models into your own code.
 
-So it should be as simple as running the command (Ensure your environment is activated):
+For running the DRYP model it should be as simple as running the command (Ensure your environment is activated):
 ```
-python run.py
+python run_dryp.py
 ```
 
-The output should be placed in a new folder callout 'test_output'.
+The output should be placed in a new folder called 'dryp_output'.
