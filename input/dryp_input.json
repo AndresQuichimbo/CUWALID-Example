@@ -1,14 +1,13 @@
 {
-    "drylandmodel": {
-        "model_name": "test"
-    },
+    "model_name": "model test",
+    "path_input": "input/",
     "TERRAIN": {
-        "path_dem": "input/input_files/test_dem_m.asc",
+        "path_dem": "input_files/test_dem_m.asc",
         "path_Qo": null,
-        "path_fdl": "input/input_files/test_flowdir_m.asc",
+        "path_fdl": "input_files/test_flowdir_m.asc",
         "path_riv_decay": null,
-        "path_mask": "input/input_files/test_mask_m.asc",
-        "path_riv_len": "input/input_files/test_riv_m.asc",
+        "path_mask": "input_files/test_mask_m.asc",
+        "path_riv_len": "input_files/test_riv_m.asc",
         "path_riv_width": null,
         "path_riv_elev": null
     },
@@ -18,44 +17,39 @@
         "path_veg_nn": null
     },
     "UNSATURATED": {
-        "path_uz_theta_sat: porosity": "input/input_files/test_rawls_ne.txt",
-        "path_uz_theta_res": "input/input_files/test_rawls_theta_r.txt",
-        "path_uz_theta_awc": "input/input_files/test_rawls_awc.txt",
-        "path_uz_theta_wp": "input/input_files/test_rawls_wp.txt",
-        "path_uz_root": "input/input_files/test_depth_m.asc",
-        "path_uz_lambda": "input/input_files/test_rawls_n.txt",
-        "path_uz_psi": "input/input_files/test_rawls_phi.txt",
-        "path_uz_ksat": "input/input_files/test_rawls_ks.txt",
-        "path_uz_sigmaksat": "input/input_files/test_rawls_sigma_ks.txt",
+        "path_uz_theta_sat: porosity": "input_files/test_rawls_ne.txt",
+        "path_uz_theta_res": "input_files/test_rawls_theta_r.txt",
+        "path_uz_theta_awc": "input_files/test_rawls_awc.txt",
+        "path_uz_theta_wp": "input_files/test_rawls_wp.txt",
+        "path_uz_root": "input_files/test_depth_m.asc",
+        "path_uz_lambda": "input_files/test_rawls_n.txt",
+        "path_uz_psi": "input_files/test_rawls_phi.txt",
+        "path_uz_ksat": "input_files/test_rawls_ks.txt",
+        "path_uz_sigmaksat": "input_files/test_rawls_sigma_ks.txt",
         "path_uz_theta": null,
         "path_riv_ksat": null
     },
     "SATURATED": {
-        "path_sz_mask": "input/input_files/test_mask_m.asc",
-        "path_sz_ksat": "input/input_files/test_rawls_ks1.txt",
+        "path_sz_mask": "input_files/test_mask_m.asc",
+        "path_sz_ksat": "input_files/test_rawls_ks1.txt",
         "path_sz_sy": null,
-        "path_sz_wte": "input/input_files/test_wte_ini.asc",
+        "path_sz_wte": "input_files/test_wte_ini.asc",
         "path_sz_bc_flux": null,
-        "path_sz_bc_head": "input/input_files/test_CHB1.asc",
+        "path_sz_bc_head": "input_files/test_CHB1.asc",
         "path_sz_bottom": null
     },
     "METEO": {
-        "path_pre": "input/input_files/Pre_60m_00_05_sin.csv",
-        "path_pet": "input/input_files/Pre_60m_00_05_sin.csv",
+        "path_pre": "input_files/Pre_60m_00_05_sin.csv",
+        "path_pet": "input_files/Pre_60m_00_05_sin.csv",
         "path_aof": null,
         "Other": null
     },
     "OUTPUT": {
-        "path_out_sz": "input/input_files/test_Flumes_points.csv",
-        "path_out_uz": "input/input_files/test_SM_points.csv",
-        "path_out_oz": "input/input_files/test_well_point_m.csv",
+        "path_out_sz": "input_files/test_Flumes_points.csv",
+        "path_out_uz": "input_files/test_SM_points.csv",
+        "path_out_oz": "input_files/test_well_point_m.csv",
         "path_output": "dryp_output",
         "Other": null,
-        "path_setting": "input//dryp_settings.json",
-        "path_gw_settings": null,
-        "path_vg_settings": null,
-        "path_rp_settings": null,
-        "path_of_settings": null,
-        "path_projection": null
+        "path_setting": "input/dryp_settings.json"
     }
 }
