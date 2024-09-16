@@ -1,81 +1,109 @@
 {
-    "SIMULATION_PERIOD": {
-        "start_date": "2000 1 1",
-        "end_date": "2002 1 3"
-    },
 
-    "TIMESTEP_SETTINGS": {
-        "dt_of": 60,
-        "dt_uz": 60,
-        "dt_gw": 60
+    "model_name": "DRYP_model_sim",
+    "path_input": "",
+ 
+    "TERRAIN": {
+       "path_dem": "required",
+       "path_Qo": null,
+       "path_fdl": null,
+       "path_riv_decay": null,
+       "path_mask": null,
+       "path_riv_len": null,
+       "path_riv_width": null,
+       "path_riv_elev": null
     },
-
-    "READING": {
-      
-        "data_reading": {
-            "pre": 0,
-            "pet": 0,
-            "abs": 0,
-            "kc": 0,
-            "flux": 0,
-            "savi": 0,
-            "savi_min": 0,
-            "savi_max": 0
-            },
-        "data_step": {
-            "pre": 60,
-            "pet": 60,
-            "abs": 60,
-            "kc": 60,
-            "flux": 60,
-            "savi": 60,
-            "savi_min": 60,
-            "savi_max": 60
-            },
-        "data_reproject": {
-            "pre": true,
-            "pet": true,
-            "abs": true,
-            "kc": true,
-            "flux": true,
-            "savi": true,
-            "savi_min": true,
-            "savi_max": true
-            },
-        "data_interp": {
-            "pre": true,
-            "pet": true,
-            "abs": true,
-            "kc": true,
-            "flux": true,
-            "savi": true,
-            "savi_min": true,
-            "savi_max": true
-            }
+ 
+    "VEGETATION": {
+       "path_veg_kc": null,
+       "path_veg_lulc": null
     },
-
-    "COMPONENTS": {
-        "method_inf": 1,
-        "method_gw": "1 0"
+ 
+    "UNSATURATED": {
+       "path_uz_theta_sat": null,
+       "path_uz_theta_res": null,
+       "path_uz_theta_awc": null,
+       "path_uz_theta_wp": null,
+       "path_uz_root": null,
+       "path_uz_lambda": null,
+       "path_uz_psi": null,
+       "path_uz_ksat": null,
+       "path_uz_sigmaksat": null,
+       "path_uz_theta": null,
+       "path_riv_ksat": null,
+       "path_uz_bottomksat": null
     },
-
+ 
+    "SATURATED": {
+       "path_sz_mask": null,
+       "path_sz_ksat": null,
+       "path_sz_sy": null,
+       "path_sz_wte": null,
+       "path_sz_bc_flux": null,
+       "path_sz_bc_head": null,
+       "path_sz_bottom": null
+    },
+ 
+    "METEO": {
+       "path_pre": null,
+       "path_pet": null,
+       "path_aof": null
+    },
+ 
     "OUTPUT": {
-        "output_csv": true,
-        "output_grid": false,
-        "output_dt": "1M"
+       "path_out_sz": null,
+       "path_out_uz": null,
+       "path_out_oz": null,
+       "path_output": null,
+       "Other": null,
+       "path_setting": null,
+       "path_projection": null
     },
-
-    "GLOBAL_FACTORS": {
-        "uz_kdt": 1.0,
-        "uz_kdroot": 1.0,
-        "uz_kawc": 1.0,
-        "uz_kkast": 1.0,
-        "uz_ksigma": 1.0,
-        "riv_kksat": 1.0,
-        "riv_kdecay": 1.0,
-        "riv_kwidth": 1.0,
-        "sz_kksat": 1.0,
-        "sz_ksy": 1.0,
-        "of_kflow": 1.0
+ 
+    "RIPARIAN": {
+       "path_rp_theta_sat": null,
+       "path_rp_theta_res": null,
+       "path_rp_theta_awc": null,
+       "path_rp_theta_wp": null,
+       "path_rp_rootdepth": null,
+       "path_rp_lambdas": null,
+       "path_rp_psi": null,
+       "path_rp_ksat": null,
+       "path_rp_sigmaksat": null,
+       "path_rp_theta": null,
+       "path_rp_width": null
+    },
+ 
+    "INTERCEPTION": {
+       "path_veg_lulc_frac": null,
+       "path_veg_hs_savi": null,
+       "path_veg_hs_par_a": null,
+       "path_veg_hs_par_b": null,
+       "path_veg_hs_savi_min": null,
+       "path_veg_hs_savi_max": null,
+       "path_veg_hs_lai": null,
+       "path_veg_rp_par_a": null,
+       "path_veg_rp_par_b": null,
+       "path_veg_rp_savi_min": null,
+       "path_veg_rp_savi_max": null,
+       "path_veg_rp_lai": null,
+       "path_veg_rp_tap_depth": null,
+       "path_veg_rp_final_depth": null,
+       "path_veg_rp_fcw": null,
+       "path_veg_rp_sca": null
+    },
+ 
+    "GROUNDWATER": {
+       "path_gw_depth": null,
+       "path_gw_bdd": null,
+       "path_gw_2l_bottom": null,
+       "path_gw_2l_ksat": null,
+       "path_gw_2l_sy": null,
+       "path_gw_2l_ss": null,
+       "path_gw_2l_wte": null,
+       "path_gw_type": null,
+       "path_gw_lake_elev": null,
+       "path_pnds_vmax": null,
+       "path_pnds_shape_par": null
     }
-}
+ }
