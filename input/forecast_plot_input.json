@@ -1,4 +1,6 @@
 {
+    "get_netcdf": true,
+    "get_csv": true,
     "plot_scales": ["County"],
     "country": "kenya",
     "place_names": ["Samburu", "Laikipia", "Meru"],
