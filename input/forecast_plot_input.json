@@ -1,5 +1,6 @@
 {
     "get_netcdf": false,
+    "get_plot": true,
     "get_csv": true,
     "plot_scales": ["County"],
     "country": "kenya",
