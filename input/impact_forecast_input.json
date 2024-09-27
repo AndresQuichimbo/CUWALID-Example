@@ -1,0 +1,17 @@
+{
+    "create_dataset": false,
+    "create_table": true,
+    "create_map": true,
+    "plot_scales": ["County"],
+    "country": "kenya",
+    "place_names": ["Samburu"],
+    "seasons": ["OND"],
+    "water_status": ["Flood"],
+    "year": 2022,
+    "language": "English",
+    "output_dir": "D:/HAD/postpp/fig",
+    "netcdf_path": "D:/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc",
+    "threshold_path":  "D:/HAD/postpp/HAD_IMERGb_D2E_sim_SSS",
+    "mask_path": "D:/HAD/model/input_model/HAD_mask_utm_m.asc",
+    "river_path": "D:/HAD/model/input_model/HAD_riv_length_utm.asc"
+}
