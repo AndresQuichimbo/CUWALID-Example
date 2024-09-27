@@ -13,5 +13,10 @@
     "netcdf_path": "D:/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc",
     "threshold_path":  "D:/HAD/postpp/HAD_IMERGb_D2E_sim_SSS",
     "mask_path": "D:/HAD/model/input_model/HAD_mask_utm_m.asc",
-    "river_path": "D:/HAD/model/input_model/HAD_riv_length_utm.asc"
+    "river_path": "D:/HAD/model/input_model/HAD_riv_length_utm.asc",
+    "shape_path": "D:/forecasting_dataset/kenya/kenya-county/ke_county.shp",
+    "prev_output_path": "D:/forecasting_dataset/HAD/output/",
+    "pp_path": "D:/forecasting_dataset/HAD/postpp/",
+    "name_historical_value": "name_historical",
+    "model_name": "HAD_IMERGba_sim0"
 }
