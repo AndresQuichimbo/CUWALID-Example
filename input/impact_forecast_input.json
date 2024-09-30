@@ -3,8 +3,8 @@
     "create_table": true,
     "create_map": false,
     "plot_scales": ["County"],
-    "country": "kenya",
-    "place_names": ["Samburu"],
+    "country": ["kenya", "somalia", "ethiopia"],
+    "place_names": null,
     "seasons": ["OND"],
     "water_status": ["Flood"],
     "year": 2022,
@@ -15,8 +15,9 @@
     "mask_path": "D:/HAD/model/input_model/HAD_mask_utm_m.asc",
     "river_path": "D:/HAD/model/input_model/HAD_riv_length_utm.asc",
     "shape_path": "D:/HAD/forecasting_dataset/kenya/kenya-county/ke_county.shp",
-    "prev_output_path": "D:/HAD//forecasting_dataset/HAD/output/",
-    "pp_path": "D:/HAD//forecasting_dataset/HAD/postpp/",
+    "prev_output_path": "D:/HAD/forecasting_dataset/HAD/output/",
+    "pp_path": "D:/HAD/forecasting_dataset/HAD/postpp/",
     "name_historical_value": "name_historical",
-    "model_name": "HAD_IMERGba_sim0"
+    "model_name": "HAD_IMERGba_sim0",
+	"parameter_dataset_list": "C:/Users/Edisson/Documents/GitHub/CUWALID-Example/input/parameters_dataset_list.json"
 }
