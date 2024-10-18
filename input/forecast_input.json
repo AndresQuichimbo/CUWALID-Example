@@ -2,6 +2,7 @@
     "run_hindcast": true,
     "run_forecast": true,
     "run_plotting":true,
+	"multi_files": true,
 
     "hindcast_model_name": "HAD_IMERGba_sim0",
     "forecast_model_name": "MAM_2022_realization_test",
