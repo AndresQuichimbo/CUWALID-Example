@@ -28,10 +28,15 @@
 	"shapefile_country_dic" : {
 		"region": "forecasting_dataset/HAD/gis/Horn_Africa/Horn_africa_contry.shp"
 	},
-	"shapefile_county_dic" : {
+	"shapefile_level_1_dic" : {
 		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya-county/ke_county.shp",
 		"ethiopia": "D:/HAD/forecasting_dataset/ethiopia/Export_admin2.shp",
 		"somalia": "D:/HAD/forecasting_dataset/somalia/somalia_region_wgs84.shp"
+	},
+	"shapefile_level_2_dic" : {
+		"kenya": null,
+		"ethiopia": null,
+		"somalia": "D:/HAD/forecasting_dataset/somalia/som_admbnda_adm2_undp.shp"
 	},
 	"shapefile_wards_dic" : {
 		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya_wards/Kenya wards.shp"
@@ -40,6 +45,15 @@
 		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya-county/KE_Kenya_county.csv",
 		"ethiopia": "D:/HAD/forecasting_dataset/ethiopia/ET_Ethiopia_region.csv",
 		"somalia": "D:/HAD/forecasting_dataset/somalia/SO_Somalia_region.csv"
+	},
+	"fname_mask_dic" : {
+		"Soil": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Evaporation": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Groundwater": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Surface": "D:/HAD/model/input/HAD_riv_length_utm.asc",
+		"Flood": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Crop": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Pasture": "D:/HAD/model/input/HAD_mask_utm_m.asc"
 	},
 	"rivers_shape_path" : "forecasting_dataset/NaturalEarth/ne_10m_rivers_lake_centerlines.shp",
 	"default_netcdf" : "forecasting_dataset/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc"
