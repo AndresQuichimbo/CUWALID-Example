@@ -4,3 +4,5 @@ stopet_output
 test_env/
 dryp_output
 output/
+forecasting_dataset/
+forecast_plot_input.json
