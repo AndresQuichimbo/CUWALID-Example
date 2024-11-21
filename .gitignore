@@ -1,4 +1,5 @@
 venv
+input/cache
 .vscode/
 stopet_output
 test_env/

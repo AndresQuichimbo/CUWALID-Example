@@ -1,0 +1,60 @@
+{
+	"name_short_country" : {
+		"kenya":"KE",
+		"ethiopia":"ET",
+		"somalia":"SO"
+	},
+	"name_field_county_shp" : {
+		"kenya":"county",
+		"ethiopia":"NAME_2",
+		"somalia":"NAME"
+	},
+	"code_county_shp" : {
+		"kenya":"gid",
+		"ethiopia":"OBJECTID",
+		"somalia":"REGN_NO"
+	},
+	"name_county_shp" : {
+		"kenya":"county",
+		"ethiopia":"NAME_2",
+		"somalia":"NAME"
+	},
+	"name_field_shp" : {
+		"Zoom": "IEBC_WARDS",
+		"Ward": "IEBC_WARDS",
+		"County": null,
+		"Country": "NAME"
+	},
+	"shapefile_country_dic" : {
+		"region": "/home/cuwalid/Datasets/data/shp/wgs84/Horn_africa_contry.shp"
+	},
+	"shapefile_level_1_dic" : {
+		"kenya": "/home/cuwalid/Datasets/data/shp/wgs84/kenya/kenya-county/ke_county.shp",
+		"ethiopia": "/home/cuwalid/Datasets/data/shp/wgs84/ethiopia/Export_admin2.shp",
+		"somalia": "/home/cuwalid/Datasets/data/shp/wgs84/somalia/somalia_region_wgs84.shp"
+	},
+	"shapefile_level_2_dic" : {
+		"kenya": null,
+		"ethiopia": null,
+		"somalia": "/home/cuwalid/Datasets/data/shp/wgs84/somalia/som_admbnda_adm2_undp.shp"
+	},
+	"shapefile_wards_dic" : {
+		"kenya": null
+	},
+	"fname_places_list_file" : {
+		"kenya": "/home/cuwalid/Datasets/data/shp/wgs84/kenya/kenya-county/HAD_ke_county.csv",
+		"ethiopia": "/home/cuwalid/Datasets/data/shp/wgs84/ethiopia/ET_Ethiopia_region.csv",
+		"somalia": "/home/cuwalid/Datasets/data/shp/wgs84/somalia/SO_Somalia_region.csv"
+	},
+	"fname_mask_dic" : {
+		"Soil": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Evaporation": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Groundwater": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Surface": "/home/cuwalid/training/historical/regional/model/input/HAD_riv_length_utm.asc",
+		"Flood": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Crop": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Pasture": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc"
+	},
+	"rivers_shape_path" : "/home/cuwalid/Datasets/data/shp/wgs84/NaturalEarth/ne_10m_rivers_lake_centerlines.shp",
+	"default_netcdf" : "forecasting_dataset/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc"
+}

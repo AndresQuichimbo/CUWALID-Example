@@ -6,7 +6,7 @@
     "country": ["somalia"],
     "place_names": null,
     "seasons": ["OND"],
-    "water_status": ["Groundwater", "Flood", "Surface", "Soil", "Crop",],
+    "water_status": ["Groundwater", "Flood", "Surface", "Soil", "Crop"],
     "year": 2022,
     "language": "English",
     "output_dir": "D:/HAD/forecasting_dataset/HAD/postpp/",
