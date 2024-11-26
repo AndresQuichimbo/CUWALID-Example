@@ -1,5 +1,5 @@
 import time
-from cuwalid.forecasting.Main_forecast import run_forecast
+from cuwalid.forecasting.main_impact_forecast import run_forecast
 
 start_time = time.time()
 run_forecast("input/forecast_input.json")
