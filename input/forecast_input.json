@@ -1,7 +1,7 @@
 {
-    "run_historical": true,
+    "run_historical": false,
     "run_forecast": true,
-    "run_plotting":true,
+    "run_plotting": false,
 	"multi_files": true,
 	
 	"historical": {

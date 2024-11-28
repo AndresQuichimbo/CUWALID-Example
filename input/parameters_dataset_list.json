@@ -5,7 +5,7 @@
 		"somalia":"SO"
 	},
 	"name_field_county_shp" : {
-		"kenya":"county",
+		"kenya":"ADM1_EN",
 		"ethiopia":"NAME_2",
 		"somalia":"NAME"
 	},
