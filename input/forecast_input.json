@@ -1,19 +1,30 @@
 {
-    "run_hindcast": true,
+    "run_historical": false,
     "run_forecast": true,
-    "run_plotting":true,
+    "run_plotting": false,
 	"multi_files": true,
+	
+	"historical": {
+		"model_name": "HAD_IMERGcv_sim83",
+		"model_path": "/home/cuwalid/training/historical/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/historical/regional/postpp/"
+	},
+	
+	"forecasting": {
+		"model_name": "OND_2022_realization",
+		"model_path": "/home/cuwalid/training/forecast/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/forecast/regional/postpp/"
+	},
 
-    "hindcast_model_name": "HAD_IMERGba_sim0",
-    "forecast_model_name": "MAM_2022_realization_test",
-    "model_path": "/home/cuwalid/training/historical/regional/outputs/",
-    "postpp_path": "/home/aquichimbo/training/historical/regional/postpp/",
-    "threshold_path": "/home/aquichimbo/training/historical/regional/postpp/netcdf/HAD_IMERGba_sim0_MAM_extremes_quantiles.nc",
-    "dataset_path": "/path/to/dataset",
-    "season": ["MAM"],
+	"threshold_path": "/home/cuwalid/training/historical/regional/postpp/netcdf/",
+	"threshold_path1": "/home/cuwalid/training/historical/regional/postpp/netcdf/HAD_IMERGba_sim0_MAM_extremes_quantiles.nc",
+	
+    "season": ["OND"],
     "start_year": 2003,
     "end_year": 2023,
-    "variables": {
+    "year": 2022,
+	
+	"variables": {
         "pre": true,
         "pet": true,
         "aet": true,

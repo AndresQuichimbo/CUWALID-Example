@@ -10,12 +10,12 @@
 		"somalia":"NAME"
 	},
 	"code_county_shp" : {
-		"kenya":"gid",
+		"kenya":"CODE",
 		"ethiopia":"OBJECTID",
 		"somalia":"REGN_NO"
 	},
 	"name_county_shp" : {
-		"kenya":"county",
+		"kenya":"ADM1_EN",
 		"ethiopia":"NAME_2",
 		"somalia":"NAME"
 	},
@@ -29,7 +29,7 @@
 		"region": "/home/cuwalid/Datasets/data/shp/wgs84/Horn_africa_contry.shp"
 	},
 	"shapefile_level_1_dic" : {
-		"kenya": "/home/cuwalid/Datasets/data/shp/wgs84/kenya/kenya-county/ke_county.shp",
+		"kenya": "/home/cuwalid/Datasets/data/shp/wgs84/kenya/ken_admbnda_adm1_iebc_20191031.shp",
 		"ethiopia": "/home/cuwalid/Datasets/data/shp/wgs84/ethiopia/Export_admin2.shp",
 		"somalia": "/home/cuwalid/Datasets/data/shp/wgs84/somalia/somalia_region_wgs84.shp"
 	},

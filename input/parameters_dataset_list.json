@@ -5,17 +5,17 @@
 		"somalia":"SO"
 	},
 	"name_field_county_shp" : {
-		"kenya":"county",
+		"kenya":"ADM1_EN",
 		"ethiopia":"NAME_2",
 		"somalia":"NAME"
 	},
 	"code_county_shp" : {
-		"kenya":"gid",
+		"kenya":"CODE",
 		"ethiopia":"OBJECTID",
 		"somalia":"REGN_NO"
 	},
 	"name_county_shp" : {
-		"kenya":"county",
+		"kenya":"ADM1_EN",
 		"ethiopia":"NAME_2",
 		"somalia":"NAME"
 	},
@@ -29,7 +29,7 @@
 		"region": "forecasting_dataset/HAD/gis/Horn_Africa/Horn_africa_contry.shp"
 	},
 	"shapefile_level_1_dic" : {
-		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya-county/ke_county.shp",
+		"kenya": "D:/HAD/forecasting_dataset/kenya/ken_admbnda_adm1_iebc_20191031.shp",
 		"ethiopia": "D:/HAD/forecasting_dataset/ethiopia/Export_admin2.shp",
 		"somalia": "D:/HAD/forecasting_dataset/somalia/somalia_region_wgs84.shp"
 	},
