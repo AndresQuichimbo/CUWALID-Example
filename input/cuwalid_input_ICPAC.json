@@ -1,0 +1,43 @@
+{
+    "run_STORM": false,
+    "run_stoPET": false,
+    "run_DRYP": true,
+	"run_WaterCast": true,
+	
+	"historical": {
+		"model_name": "HAD_IMERGcv_sim83",
+		"model_path": "/home/cuwalid/training/historical/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/historical/regional/postpp/"
+	},
+	
+	"forecasting": {
+		"model_name": "OND_2022_realization",
+		"model_path": "/home/cuwalid/training/forecast/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/forecast/regional/postpp/"
+	},
+
+	"threshold_path": "/home/cuwalid/training/historical/regional/postpp/netcdf/",
+	
+    "season": ["OND"],
+    "start_year": 2003,
+    "end_year": 2023,
+    "year": 2022,
+	"NSIM": 30,
+	
+	"MODELS": {
+		"DRYP": {
+			"input":"/home/cuwalid/training/forecast/regional/model/HAD_IMERGcv_input_sim85.json",
+			"settings": "/home/cuwalid/training/forecast/regional/model/"
+			},
+		"STORM": {
+			"input":"/home/cuwalid/leo_test/CUWALID-Example/input/stopet_input.json"
+			},
+		"stoPET": {
+			"input":"/home/cuwalid/leo_test/CUWALID-Example/input/stopet_input.json"
+			},
+		"WaterCast": {
+			"HyCast": "/home/cuwalid/training/forecasting_model_files/forecast_input.json",
+			"ImCast": "/home/cuwalid/training/forecasting_model_files/impact_forecast_input_ICPAC.json"
+			}
+	}
+}
