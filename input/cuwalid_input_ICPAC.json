@@ -16,6 +16,9 @@
 		"postpp_path": "/home/cuwalid/training/forecast/regional/postpp/"
 	},
 
+	"Tercile_Pre_path": "/home/cuwalid/training/dataset_icpac/Ens_Prec_2monLead_OND_Prob_EnsRegrCPT-avgRaw2024.nc",
+	"Tercile_Tem_path": "/home/cuwalid/training/dataset_icpac/Ens_Tref_2monLead_OND_Raw_2024.nc",
+	
 	"threshold_path": "/home/cuwalid/training/historical/regional/postpp/netcdf/",
 	
     "season": ["OND"],
