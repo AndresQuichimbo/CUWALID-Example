@@ -6,12 +6,14 @@
 	
 	"historical": {
 		"model_name": "HAD_IMERGcv_sim83",
+		"main_path": "/home/cuwalid/training/historical/regional/",
 		"model_path": "/home/cuwalid/training/historical/regional/outputs/",
 		"postpp_path": "/home/cuwalid/training/historical/regional/postpp/"
 	},
 	
 	"forecasting": {
 		"model_name": "OND_2022_realization",
+		"main_path": "/home/cuwalid/training/forecast/regional/",
 		"model_path": "/home/cuwalid/training/forecast/regional/outputs/",
 		"postpp_path": "/home/cuwalid/training/forecast/regional/postpp/"
 	},

@@ -1,7 +1,7 @@
 {
     "create_dataset": false,
-    "create_table": false,
-    "create_map": true,
+    "create_table": true,
+    "create_map": false,
     "plot_scales": ["County"],
     "country": ["kenya"],
     "place_names": ["Samburu"],
