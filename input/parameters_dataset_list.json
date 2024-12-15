@@ -51,7 +51,7 @@
 		"Evaporation": "D:/HAD/model/input/HAD_mask_utm_m.asc",
 		"Groundwater": "D:/HAD/model/input/HAD_mask_utm_m.asc",
 		"Surface": "D:/HAD/model/input/HAD_riv_length_utm.asc",
-		"Flood": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Flood": "D:/HAD/model/input/HAD_riv_length_utm.asc",
 		"Crop": "D:/HAD/model/input/HAD_mask_utm_m.asc",
 		"Pasture": "D:/HAD/model/input/HAD_mask_utm_m.asc"
 	},

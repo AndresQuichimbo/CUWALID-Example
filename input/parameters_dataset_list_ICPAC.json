@@ -51,7 +51,7 @@
 		"Evaporation": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
 		"Groundwater": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
 		"Surface": "/home/cuwalid/training/historical/regional/model/input/HAD_riv_length_utm.asc",
-		"Flood": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+		"Flood": "/home/cuwalid/training/historical/regional/model/input/HAD_riv_length_utm.asc",
 		"Crop": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
 		"Pasture": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc"
 	},
