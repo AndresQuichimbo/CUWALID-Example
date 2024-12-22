@@ -14,7 +14,7 @@
     "latval_max": 16.0,
     "lonval_min": 31.0,
     "lonval_max": 52.1,
-    "trial_number": 6,
+    "slice_only": 1,
     "number_ensm": 3,
     "tempAdj": 2,
     "deltat": 0.0,
