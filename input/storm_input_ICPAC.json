@@ -8,6 +8,6 @@
     "ZON_FILE": "./model_input/regions.shp",
     "OUT_PATH": "/home/cuwalid/training/forecast/regional/dataset/pre/",
     "RAIN_MAP": "./model_input/rainfall_OND.nc",
-    "NREGIONS": 4,
+    "NREGIONS": 4
     
 }
