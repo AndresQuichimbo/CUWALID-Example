@@ -1,6 +1,6 @@
 {
-    "run_STORM": true,
-    "run_stoPET": true,
+    "run_STORM": false,
+    "run_stoPET": false,
     "run_DRYP": true,
 	"run_WaterCast": true,
 	
@@ -16,7 +16,7 @@
     "start_year": 2003,
     "end_year": 2023,
     "year": 2022,
-	"NSIM": 4,
+	"NSIM": 3,
 	
 	"MODELS": {
 		"DRYP": {
@@ -24,10 +24,10 @@
 			"settings": "/home/cuwalid/training/forecast/regional/model/"
 			},
 		"STORM": {
-			"input":"inputs/storm_input.json"
+			"input":"input/storm_input.json"
 			},
 		"stoPET": {
-			"input":"inputs/stopet_input.json"
+			"input":"input/stopet_input_ICPAC.json"
 			},
 		"WaterCast": {
 			"HyCast": "/home/cuwalid/training/forecasting_model_files/forecast_input.json",

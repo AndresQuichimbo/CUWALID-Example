@@ -8,3 +8,6 @@ output/
 forecasting_dataset/
 forecast_plot_input.json
 storm_output/
+logs/
+forecast/
+historical/

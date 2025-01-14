@@ -1,9 +1,9 @@
 {
     "execution_type": "hpc",
-    "outputpath": "/home/cuwalid/training/forecast/regional/dataset/pet/",
+    "outputpath": "output/path",
     "runtype": "regional",
-    "startyear": 2024,
-    "endyear": 2024,
+    "startyear": 1944,
+    "endyear": 1945,
     "seasonswitch": 1,
     "startdate": 274,
     "enddate": 365,
@@ -14,11 +14,11 @@
     "latval_max": 16.0,
     "lonval_min": 31.0,
     "lonval_max": 52.1,
+    "locname": "kenya",
     "number_ensm": 3,
     "tempAdj": 2,
     "deltat": 0.0,
-    "locname": "HAD",
     "udpi_pet": 5,
-    "slice_only": 0,
-    "tercile_forecast_file": "/user/home/fp20123/v2_stopet/ICPAC_TempF_OND2022_HAD.nc"
-}
+    "slice_only": 1,
+    "tercile_forecast_file": "ICPAC_TempF_OND2022_HAD.nc"
+  }
