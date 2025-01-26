@@ -6,7 +6,7 @@
     "country": ["ethiopia"],
     "place_names": ["Wolayita"],
     "seasons": ["OND"],
-    "water_status": ["Crop"],
+    "water_status": ["Flood"],
     "year": 2022,
     "language": ["English"],
     "output_dir": "D:/HAD/forecasting_dataset/HAD/postpp/",
