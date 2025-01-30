@@ -52,8 +52,8 @@
 		"Groundwater": "D:/HAD/model/input/HAD_mask_utm_m.asc",
 		"Surface": "D:/HAD/model/input/HAD_riv_length_utm.asc",
 		"Flood": "D:/HAD/model/input/HAD_riv_length_utm.asc",
-		"Crop": "D:/HAD/model/input/HAD_mask_utm_m.asc",
-		"Pasture": "D:/HAD/model/input/HAD_mask_utm_m.asc"
+		"Crop": "D:/HAD/model/input/HAD_maks_crops.asc",
+		"Pasture": "D:/HAD/model/input/HAD_maks_browse.asc"
 	},
 	"rivers_shape_path" : "forecasting_dataset/NaturalEarth/ne_10m_rivers_lake_centerlines.shp",
 	"default_netcdf" : "forecasting_dataset/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc"

@@ -38,7 +38,7 @@
         "tls": false,
         "wte": true,
         "twsc": true,
-        "wrsi": true,
-        "flood": true
+        "wrsi": false,
+		"flood": true
     }
 }
