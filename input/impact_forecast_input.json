@@ -1,16 +1,16 @@
 {
     "create_dataset": false,
-    "create_table": false,
+    "create_table": true,
     "create_map": true,
     "plot_scales": ["County"],
-    "country": ["ethiopia"],
-    "place_names": ["Wolayita"],
-    "seasons": ["OND"],
-    "water_status": ["Crop"],
-    "year": 2022,
-    "language": ["English"],
-    "output_dir": "D:/HAD/forecasting_dataset/HAD/postpp/",
-    "netcdf_path": "D:/HAD/postpp/netcdf/MAM_2022_realization_twsc_MAM_2022_probabilistic_tercile_forecast.nc",
-    "model_name": "HAD_IMERGba_sim0",
-	"parameter_dataset_list": "C:/Users/Edisson/Documents/GitHub/CUWALID-Example/input/parameters_dataset_list.json"
+    "country": ["ethiopia", "somalia", "kenya"],
+    "place_names": null,
+    "seasons": ["MAM"],
+    "water_status": ["Flood", "Surface", "Groundwater", "Crop", "Pasture"],
+    "year": 2025,
+    "language": ["English","Swahili", "Amharic", "Oromo", "Somali"],
+    "output_dir": "",
+    "netcdf_path": null,
+    "model_name": "MAM_2025_realization",
+    "parameter_dataset_list": "/home/cuwalid/training/forecasting_model_files/parameters_dataset_list_ICPAC.json"
 }

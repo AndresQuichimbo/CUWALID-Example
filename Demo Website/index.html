@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUWALID Input Helper (DEMO)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 5px 0;
+        }
+        .checkbox-container label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .json-output {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>CUWALID Configuration Helper</h2>
+    <div id="formContainer"></div>
+    <button onclick="exportJSON()">Export JSON</button>
+
+    <h3>Generated JSON</h3>
+    <pre class="json-output" id="jsonOutput">Loading JSON data...</pre>
+
+    <script>
+        let jsonData = {
+            "run_STORM": true,
+            "run_stoPET": true,
+            "run_DRYP": true,
+            "run_WaterCast": true,
+            "historical_model_name": "HAD_IMERGcv_sim83",
+            "forecasting_model_name": "OND_2022_realization",
+            "output_dir": "",
+            "Tercile_Pre_path": "/home/cuwalid/training/dataset_icpac/Ens_Prec_2monLead_OND_Prob_EnsRegrCPT-avgRaw2024.nc",
+            "Tercile_Tem_path": "/home/cuwalid/training/dataset_icpac/Ens_Tref_2monLead_OND_Raw_2024.nc",
+            "season": ["OND", "MAM"],
+            "start_year": 2003,
+            "end_year": 2023,
+            "year": 2022,
+            "NSIM": 30,
+            "MODELS": {
+                "DRYP": {
+                    "input": "/home/cuwalid/training/forecast/regional/model/HAD_IMERGcv_input_sim85.json",
+                    "settings": "/home/cuwalid/training/forecast/regional/model/"
+                },
+                "STORM": {
+                    "input": "input/storm_input.json"
+                },
+                "stoPET": {
+                    "input": "input/stopet_input_ICPAC.json"
+                },
+                "WaterCast": {
+                    "HyCast": "/home/cuwalid/training/forecasting_model_files/forecast_input.json",
+                    "ImCast": "/home/cuwalid/training/forecasting_model_files/impact_forecast_input_ICPAC.json"
+                }
+            }
+        };
+
+        generateForm(jsonData);
+
+        function generateForm(data, parentElement = document.getElementById('formContainer')) {
+            parentElement.innerHTML = '';
+
+            for (let key in data) {
+                const value = data[key];
+                const label = document.createElement('label');
+                label.textContent = key;
+                parentElement.appendChild(label);
+
+                let input;
+
+                if (typeof value === 'boolean') {
+                    input = document.createElement('input');
+                    input.type = 'checkbox';
+                    input.checked = value;
+                    input.addEventListener('change', () => {
+                        data[key] = input.checked;
+                        updateJSONOutput();
+                    });
+                } else if (typeof value === 'string') {
+                    input = document.createElement('input');
+                    input.type = 'text';
+                    input.value = value;
+                    input.addEventListener('input', () => {
+                        data[key] = input.value;
+                        updateJSONOutput();
+                    });
+                } else if (typeof value === 'number') {
+                    input = document.createElement('input');
+                    input.type = 'number';
+                    input.value = value;
+                    input.addEventListener('input', () => {
+                        data[key] = Number(input.value);
+                        updateJSONOutput();
+                    });
+                } else if (Array.isArray(value)) {
+                    const checkboxContainer = document.createElement('div');
+                    checkboxContainer.classList.add('checkbox-container');
+
+                    value.forEach(optionValue => {
+                        const checkboxLabel = document.createElement('label');
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+                        checkbox.value = optionValue;
+                        checkbox.checked = data[key].includes(optionValue);
+                        checkbox.addEventListener('change', () => {
+                            if (checkbox.checked) {
+                                data[key].push(optionValue);
+                            } else {
+                                data[key] = data[key].filter(item => item !== optionValue);
+                            }
+                            updateJSONOutput();
+                        });
+                        checkboxLabel.appendChild(checkbox);
+                        checkboxLabel.appendChild(document.createTextNode(optionValue));
+                        checkboxContainer.appendChild(checkboxLabel);
+                    });
+                    parentElement.appendChild(checkboxContainer);
+                    continue;
+                } else if (typeof value === 'object' && value !== null) {
+                    const subContainer = document.createElement('div');
+                    subContainer.style.marginLeft = '20px';
+                    parentElement.appendChild(subContainer);
+                    generateForm(value, subContainer);
+                    continue;
+                }
+                
+                parentElement.appendChild(input);
+            }
+            updateJSONOutput();
+        }
+
+        function exportJSON() {
+            const jsonString = JSON.stringify(jsonData, null, 4);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'config.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        function updateJSONOutput() {
+            document.getElementById('jsonOutput').textContent = JSON.stringify(jsonData, null, 4);
+        }
+    </script>
+</body>
+</html>

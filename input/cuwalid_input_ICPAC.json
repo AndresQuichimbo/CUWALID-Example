@@ -1,37 +1,45 @@
 {
-    "run_STORM": false,
-    "run_stoPET": false,
+    "run_STORM": true,
+    "run_stoPET": true,
     "run_DRYP": true,
-	"run_WaterCast": true,
+	"run_WaterCast": false,
 	
-	"historical_model_name": "HAD_IMERGcv_sim83",
-	"forecasting_model_name": "OND_2022_realization",
+	"sim_in_parallel": true,
+
+	"historical": {
+		"model_name": "historical_model_name",
+		"main_path": "main_path",
+		"model_path": "model_path",
+		"postpp_path": "postpp_path"
+	},
+
+	"forecasting_model_name": "MAM_2025_realization",
 
 	"output_dir": "",
 
-	"Tercile_Pre_path": "/home/cuwalid/training/dataset_icpac/Ens_Prec_2monLead_OND_Prob_EnsRegrCPT-avgRaw2024.nc",
-	"Tercile_Tem_path": "/home/cuwalid/training/dataset_icpac/Ens_Tref_2monLead_OND_Raw_2024.nc",
+	"Tercile_Pre_path": "input/input_files/Ens_Prec_2monLead_MAM_Prob_LogitWVGEnsRegrCPT-avgRaw2025.nc",
+	"Tercile_Tem_path": "input/input_files/Ens_Tref_2monLead_MAM_Raw_2025.nc",
 		
-    "season": ["OND"],
-    "start_year": 2003,
-    "end_year": 2023,
-    "year": 2022,
-	"NSIM": 3,
+    "season": ["MAM"],
+    "start_year": 2025,
+    "end_year": 2025,
+    "year": 2025,
+	"NSIM": 30,
 	
 	"MODELS": {
 		"DRYP": {
-			"input":"/home/cuwalid/training/forecast/regional/model/HAD_IMERGcv_input_sim85.json",
-			"settings": "/home/cuwalid/training/forecast/regional/model/"
+			"input":"input/dryp_input.json",
+			"settings": "input/dryp_settings.json"
 			},
 		"STORM": {
-			"input":"input/storm_input.json"
+			"input":"input/storm_input_ICPAC.json"
 			},
 		"stoPET": {
 			"input":"input/stopet_input_ICPAC.json"
 			},
 		"WaterCast": {
-			"HyCast": "/home/cuwalid/training/forecasting_model_files/forecast_input.json",
-			"ImCast": "/home/cuwalid/training/forecasting_model_files/impact_forecast_input_ICPAC.json"
+			"HyCast": "input/forecast_input.json",
+			"ImCast": "input/impact_forecast_input.json"
 			}
 	}
 }
