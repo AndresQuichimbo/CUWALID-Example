@@ -2,28 +2,12 @@
     "run_STORM": true,
     "run_stoPET": true,
     "run_DRYP": true,
-<<<<<<< Updated upstream
-	"run_WaterCast": false,
-	
-	"sim_in_parallel": true,
-
-=======
 	"run_WaterCast": true,
 	"sim_in_parallel": true,
 	
 	"historical_model_name": "HAD_IMERGcv_sim83",
 	"forecasting_model_name": "OND_2022_realization",
 	
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 	"historical": {
 		"model_name": "historical_model_name",
 		"main_path": "main_path",
@@ -31,45 +15,14 @@
 		"postpp_path": "postpp_path"
 	},
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 	"forecasting_model_name": "MAM_2025_realization",
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-
 	"output_dir": "",
 
 	"Tercile_Pre_path": "input/input_files/Ens_Prec_2monLead_MAM_Prob_LogitWVGEnsRegrCPT-avgRaw2025.nc",
 	"Tercile_Tem_path": "input/input_files/Ens_Tref_2monLead_MAM_Raw_2025.nc",
 		
-<<<<<<< Updated upstream
     "season": ["MAM"],
-    "start_year": 2025,
-    "end_year": 2025,
-    "year": 2025,
-=======
-    "season": ["OND"],
-    "start_year": 2003,
-    "end_year": 2023,
     "year": 2022,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 	"NSIM": 30,
 	
 	"MODELS": {
