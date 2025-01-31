@@ -14,6 +14,9 @@
 	"historical_model_name": "HAD_IMERGcv_sim83",
 	"forecasting_model_name": "OND_2022_realization",
 	
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	"historical": {
 		"model_name": "historical_model_name",
@@ -23,7 +26,10 @@
 	},
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	"forecasting_model_name": "MAM_2025_realization",
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -42,6 +48,9 @@
     "start_year": 2003,
     "end_year": 2023,
     "year": 2022,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	"NSIM": 30,
 	
