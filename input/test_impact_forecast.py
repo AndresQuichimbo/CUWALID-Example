@@ -8,5 +8,5 @@ import cuwalid.forecasting.main_impact_forecast as fcast
 
 fconfig = "/home/cuwalid/training/forecasting_model_files/impact_forecast_input_ICPAC.json"
 fconfig = "C:/Users/Edisson/Documents/GitHub/CUWALID-Example/input/impact_forecast_input.json"
-
+fconfig = "C:/Users/Edisson/Documents/GitHub/CUWALID-Example/input/impact_forecast_input_test_aq.json"
 fcast.plot_maps_json(fconfig)
