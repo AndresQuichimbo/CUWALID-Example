@@ -1,0 +1,178 @@
+/* Center the entire form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    text-align: left;
+
+}
+
+/* Center heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Input fields and select dropdown */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Checkbox container */
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Button styling */
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* JSON Output */
+.json-output {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: monospace;
+}
+
+/* Styling for checkbox labels */
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Added spacing for checkboxes */
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Tag-style display for custom lists */
+.custom-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.custom-tag button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.custom-tag button:hover {
+    color: #ffcccc;
+}
+
+.intro {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #007bff;
+    margin-bottom: 20px;
+}
+
+.intro ul {
+    padding-left: 20px;
+}
+
+.intro p {
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+.required-label {
+    color: red;
+    font-weight: bold;
+}
+
+.input-type-container {
+    background: #e3f2fd; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #90caf9; /* Slight border */
+    margin-bottom: 20px;
+}
+
+.input-type-container label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-type-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.nested-section {
+    margin: 15px 0;
+    padding: 15px;
+    border: 2px solid #ccc; /* Gray border around nested sections */
+    border-radius: 8px;
+    background: #f9f9f9; /* Slightly lighter background */
+}
+
+.nested-separator {
+    border: none;
+    height: 3px;
+    background: #ddd; /* Light gray separator line */
+    margin: 20px 0;
+}
