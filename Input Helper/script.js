@@ -1,10 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const jsonTypeSelect = document.getElementById("jsonType");
+    const filenameInput = document.getElementById("filename");
+
+    // Function to update filename based on selected input type
+    function updateFilename() {
+        filenameInput.value = jsonTypeSelect.value + ".json";
+    }
+
+    // Set initial filename on page load
+    updateFilename();
+
+    // Update filename whenever selection changes
     jsonTypeSelect.addEventListener("change", () => {
         generateForm(jsonConfigurations[jsonTypeSelect.value]);
+        updateFilename();
     });
 
-    // Initialize form and output JSON on page load
     generateForm(jsonConfigurations[jsonTypeSelect.value]);
 });
 
@@ -203,8 +214,9 @@ function createFormElements(data, parentElement, rootObject) {
         
             const separator = document.createElement('hr');
             separator.classList.add('nested-separator');
-        
-            parentElement.appendChild(separator); // Adds a divider before the section
+
+            label.style.textDecoration = "underline";
+
             parentElement.appendChild(label);
             parentElement.appendChild(container);
             
@@ -248,18 +260,75 @@ function updateJSONOutput(rootObject) {
     document.getElementById('jsonOutput').textContent = JSON.stringify(cleanedData, null, 4);
 }
 
+function loadJSONFile() {
+    const fileInput = document.getElementById("jsonUpload");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select a JSON file to upload.");
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        try {
+            const uploadedData = JSON.parse(event.target.result);
+            updateFormWithJSON(uploadedData);
+        } catch (error) {
+            alert("Invalid JSON file. Please upload a valid JSON.");
+            console.error("Error parsing JSON:", error);
+        }
+    };
+
+    reader.readAsText(file);
+    fileInput.value = "";
+}
+
+function updateFormWithJSON(uploadedData, rootObject = jsonConfigurations[document.getElementById('jsonType').value]) {
+    function updateValues(target, source) {
+        for (let key in source) {
+            if (target.hasOwnProperty(key)) {
+                if (typeof target[key] === 'object' && target[key] !== null) {
+                    // If it's an object with a "default" key, update its value
+                    if ('default' in target[key]) {
+                        target[key].default = source[key];
+                    } else {
+                        updateValues(target[key], source[key]);
+                    }
+                } else {
+                    target[key] = source[key];
+                }
+            }
+        }
+    }
+
+    updateValues(rootObject, uploadedData);
+    generateForm(rootObject);  // Regenerate form with updated values
+}
+
+
 function exportJSON() {
     const selectedConfig = jsonConfigurations[document.getElementById('jsonType').value];
 
     // Ensure exported data is cleaned
     const cleanedData = cleanData(selectedConfig);
-
     const jsonString = JSON.stringify(cleanedData, null, 4);
+
+    // Get the filename from the input field, default to "config.json" if empty
+    let filename = document.getElementById('filename').value.trim();
+    if (!filename) {
+        filename = "config.json"; // Default name if user didn't provide one
+    } else if (!filename.endsWith(".json")) {
+        filename += ".json"; // Ensure it has the .json extension
+    }
+
+    // Create the blob and trigger download
     const blob = new Blob([jsonString], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'config.json';
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
 }
+

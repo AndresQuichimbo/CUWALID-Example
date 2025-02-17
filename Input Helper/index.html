@@ -23,7 +23,7 @@
         </div>
 
         <div class="input-type-container">
-            <label for="jsonType">Select Input Type:</label>
+            <label for="jsonType">Select the type of input you would like to create:</label>
             <select id="jsonType">
                 <option value="cuwalid">CUWALID</option>
                 <option value="dryp">DRYP</option>
@@ -33,10 +33,15 @@
                 <option value="hydro_forecast">Hydro Forecast</option>
                 <option value="impact_forecast">Impact Forecast</option>
             </select>
-        </div>
-        
 
-        <div id="formContainer"></div>
+            <input type="file" id="jsonUpload" accept=".json">
+            <button onclick="loadJSONFile()">Load JSON (optional)</button>
+
+        </div>        
+
+        <div id="formContainer" class="nested-section"></div>
+        <label for="filename">Output Filename:</label>
+        <input type="text" id="filename" placeholder="Filename will auto-fill" />
         <button onclick="exportJSON()">Export JSON</button>
 
         <h3>JSON Preview</h3>
