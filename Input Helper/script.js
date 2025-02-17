@@ -231,6 +231,10 @@ function cleanData(obj) {
         return obj.default; // Extract only the value
     }
 
+    if ('default' in obj) {
+        return obj.default === null ? null : obj.default; // Preserve null values
+    }
+
     const cleanObj = {};
     for (let key in obj) {
         cleanObj[key] = cleanData(obj[key]);
