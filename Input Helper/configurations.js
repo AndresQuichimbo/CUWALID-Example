@@ -617,7 +617,7 @@ const jsonConfigurations = {
             "description": "Path to the threshold NetCDF files"
         },
         "season": {
-            "default": ["MAM"],
+            "default": ["MAM", "OND"],
             "required": true,
             "description": "List of seasons included in the simulation"
         },
