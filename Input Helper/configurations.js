@@ -556,7 +556,7 @@ const jsonConfigurations = {
             "description": "Path to the tercile forecast NetCDF file"
         }
     },
-    "forecast": {
+    "hydro_forecast": {
         "run_historical": {
             "default": false,
             "required": true,
