@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     generateForm(jsonConfigurations[jsonTypeSelect.value]);
 });
 
+document.getElementById("jsonUpload").addEventListener("change", loadJSONFile);
+
 function generateForm(data, parentElement = document.getElementById('formContainer')) {
     parentElement.innerHTML = '';
     createFormElements(data, parentElement, data);
@@ -281,7 +283,6 @@ function loadJSONFile() {
     };
 
     reader.readAsText(file);
-    fileInput.value = "";
 }
 
 function updateFormWithJSON(uploadedData, rootObject = jsonConfigurations[document.getElementById('jsonType').value]) {

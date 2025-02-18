@@ -33,11 +33,15 @@
                 <option value="hydro_forecast">Hydro Forecast</option>
                 <option value="impact_forecast">Impact Forecast</option>
             </select>
-
+        </div>    
+        
+        <div class="load-json-container">
+            <label for="jsonUpload" class="json-upload-label">
+                Optionally, you can upload a previous input file and modify it from there:
+            </label>
             <input type="file" id="jsonUpload" accept=".json">
-            <button onclick="loadJSONFile()">Load JSON (optional)</button>
-
-        </div>        
+        </div>
+        
 
         <div id="formContainer" class="nested-section"></div>
         <label for="filename">Output Filename:</label>

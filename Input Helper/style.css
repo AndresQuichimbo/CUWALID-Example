@@ -162,6 +162,29 @@ button:hover {
     background: white;
 }
 
+.load-json-container {
+    background: #ccc;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.json-upload-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+#jsonUpload {
+    width: 250px; /* Adjust width */
+    padding: 5px;
+    font-size: 14px;
+}
+
 .nested-section {
     margin: 15px 0;
     padding: 15px;
