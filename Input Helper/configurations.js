@@ -50,18 +50,18 @@ const jsonConfigurations = {
         }
     },
     "dryp": {
-        "model_name": { "default": "HAD_IMERGcv_vg_sim83_2000", "required": true, "description": "Model name used for DRYP simulations" },
-        "path_input": { "default": "", "required": false, "description": "Path to input files for the model" },
+        "model_name": { "default": "DRYP_model_sim", "required": true, "description": "Model name used for DRYP simulations" },
+        "path_input": { "default": "", "required": false, "description": "This is an optional input that will be added before each file path to save time writing long file paths over and over again" },
 
         "TERRAIN": {
             "path_dem": { "default": "HAD_DEM_utm_mm.asc", "required": true, "description": "Path to the Digital Elevation Model (DEM)" },
-            "path_Qo": { "default": "HAD_IMERGcv_sim83_2022_avg_Q_ini.asc", "required": true, "description": "Path to the initial discharge map" },
-            "path_fdl": { "default": "HAD_flowdir_land_utm.asc", "required": true, "description": "Path to the flow direction file" },
-            "path_riv_decay": { "default": "HAD_decay_utm_v2.asc", "required": true, "description": "Path to river decay factor file" },
-            "path_mask": { "default": "HAD_mask_utm_m.asc", "required": true, "description": "Path to basin mask file" },
-            "path_riv_len": { "default": "HAD_riv_length_utm_v2.asc", "required": true, "description": "Path to river length file" },
-            "path_riv_width": { "default": "HAD_width_utm_v2.asc", "required": true, "description": "Path to river width file" },
-            "path_riv_elev": { "default": "HAD_riv_elev_15pc_utm_m_sm_v3.asc", "required": true, "description": "Path to river elevation file" }
+            "path_Qo": { "default": null, "required": false, "description": "Path to the initial discharge map" },
+            "path_fdl": { "default": null, "required": false, "description": "Path to the flow direction file" },
+            "path_riv_decay": { "default": null, "required": false, "description": "Path to river decay factor file" },
+            "path_mask": { "default": null, "required": false, "description": "Path to basin mask file" },
+            "path_riv_len": { "default": null, "required": false, "description": "Path to river length file" },
+            "path_riv_width": { "default": null, "required": false, "description": "Path to river width file" },
+            "path_riv_elev": { "default": null, "required": false, "description": "Path to river elevation file" }
         },
 
         "VEGETATION": {
@@ -70,62 +70,62 @@ const jsonConfigurations = {
         },
 
         "UNSATURATED": {
-            "path_uz_theta_sat": { "default": "HAD_theta_sat_utm_m.asc", "required": true, "description": "Path to soil saturated moisture content file" },
-            "path_uz_theta_awc": { "default": "HAD_theta_awc_utm.asc", "required": true, "description": "Path to soil available water content file" },
-            "path_uz_theta_wp": { "default": "HAD_theta_wp_utm.asc", "required": true, "description": "Path to wilting point moisture content file" },
-            "path_uz_rootdepth": { "default": "HAD_rootdepth_stocker_2023_filled_factor.asc", "required": true, "description": "Path to root depth file" },
-            "path_uz_lambda": { "default": "HAD_lambdas_utm_m.asc", "required": true, "description": "Path to soil lambda parameter file" },
-            "path_uz_psi": { "default": "HAD_psi_utm_m.asc", "required": true, "description": "Path to soil water potential file" },
-            "path_uz_ksat": { "default": "HAD_ksat_utm_zhung.asc", "required": true, "description": "Path to saturated hydraulic conductivity file" },
-            "path_uz_theta": { "default": "HAD_IMERGcv_sim83_2022_avg_tht_ini.asc", "required": true, "description": "Path to initial soil moisture file" }
+            "path_uz_theta_sat": { "default": null, "required": false, "description": "Path to soil saturated moisture content file" },
+            "path_uz_theta_awc": { "default": null, "required": false, "description": "Path to soil available water content file" },
+            "path_uz_theta_wp": { "default": null, "required": false, "description": "Path to wilting point moisture content file" },
+            "path_uz_rootdepth": { "default": null, "required": false, "description": "Path to root depth file" },
+            "path_uz_lambda": { "default": null, "required": false, "description": "Path to soil lambda parameter file" },
+            "path_uz_psi": { "default": null, "required": false, "description": "Path to soil water potential file" },
+            "path_uz_ksat": { "default": null, "required": false, "description": "Path to saturated hydraulic conductivity file" },
+            "path_uz_theta": { "default": null, "required": false, "description": "Path to initial soil moisture file" }
         },
 
         "RIPARIAN": {
-            "path_rp_theta_sat": { "default": "HAD_theta_sat_utm_m.asc", "required": true, "description": "Path to riparian zone soil saturated moisture content" },
-            "path_rp_theta_awc": { "default": "HAD_theta_awc_utm.asc", "required": true, "description": "Path to riparian zone available water content" },
-            "path_rp_theta_wp": { "default": "HAD_theta_wp_utm.asc", "required": true, "description": "Path to riparian zone wilting point moisture content" },
-            "path_rp_rootdepth": { "default": "HAD_rootdepth_utm_m.asc", "required": true, "description": "Path to riparian zone root depth" },
-            "path_rp_lambda": { "default": "HAD_lambdas_utm_m.asc", "required": true, "description": "Path to riparian zone soil lambda parameter" },
-            "path_rp_psi": { "default": "HAD_psi_utm_m.asc", "required": true, "description": "Path to riparian zone soil water potential" },
-            "path_rp_ksat": { "default": "HAD_ksat_utm_m.asc", "required": true, "description": "Path to riparian zone saturated hydraulic conductivity" },
-            "path_rp_theta": { "default": "HAD_IMERGcv_sim83_2022_avg_tht_rp_ini.asc", "required": true, "description": "Path to riparian zone initial soil moisture" }
+            "path_rp_theta_sat": { "default": null, "required": false, "description": "Path to riparian zone soil saturated moisture content" },
+            "path_rp_theta_awc": { "default": null, "required": false, "description": "Path to riparian zone available water content" },
+            "path_rp_theta_wp": { "default": null, "required": false, "description": "Path to riparian zone wilting point moisture content" },
+            "path_rp_rootdepth": { "default": null, "required": false, "description": "Path to riparian zone root depth" },
+            "path_rp_lambda": { "default": null, "required": false, "description": "Path to riparian zone soil lambda parameter" },
+            "path_rp_psi": { "default": null, "required": false, "description": "Path to riparian zone soil water potential" },
+            "path_rp_ksat": { "default": null, "required": false, "description": "Path to riparian zone saturated hydraulic conductivity" },
+            "path_rp_theta": { "default": null, "required": false, "description": "Path to riparian zone initial soil moisture" }
         },
 
         "SATURATED": {
-            "path_sz_ksat": { "default": "HAD_ksat_D2E_ksat_sim_85_utm.asc", "required": true, "description": "Path to saturated zone hydraulic conductivity" },
-            "path_sz_sy": { "default": "HAD_D2E_sy_ghlymps_utm_mmm.asc", "required": true, "description": "Path to saturated zone specific yield" },
-            "path_sz_wte": { "default": "HAD_IMERGcu_sim83_2022_avg_wte_ini.asc", "required": true, "description": "Path to initial water table elevation" },
-            "path_sz_bc_head": { "default": "HAD_CHBm_utm.asc", "required": true, "description": "Path to boundary condition head" },
-            "path_sz_bottom": { "default": "HAD_botb.asc", "required": true, "description": "Path to saturated zone bottom boundary" },
-            "path_sz_depth": { "default": "HAD_BDdepth_utm_m_sm_v2.asc", "required": true, "description": "Path to saturated zone depth" },
-            "path_sz_type": { "default": "HAD_globathymetry_utm.asc", "required": true, "description": "Path to saturated zone type classification" }
+            "path_sz_ksat": { "default": null, "required": false, "description": "Path to saturated zone hydraulic conductivity" },
+            "path_sz_sy": { "default": null, "required": false, "description": "Path to saturated zone specific yield" },
+            "path_sz_wte": { "default": null, "required": false, "description": "Path to initial water table elevation" },
+            "path_sz_bc_head": { "default": null, "required": false, "description": "Path to boundary condition head" },
+            "path_sz_bottom": { "default": null, "required": false, "description": "Path to saturated zone bottom boundary" },
+            "path_sz_depth": { "default": null, "required": false, "description": "Path to saturated zone depth" },
+            "path_sz_type": { "default": null, "required": false, "description": "Path to saturated zone type classification" }
         },
 
         "METEO": {
-            "path_pre": { "default": "input/input_files/Ens_Prec_2monLead_MAM_Prob_LogitWVGEnsRegrCPT-avgRaw2025.nc", "required": true, "description": "Path to precipitation input file" },
-            "path_pet": { "default": "input/input_files/Ens_Tref_2monLead_MAM_Raw_2025.nc", "required": true, "description": "Path to potential evapotranspiration input file" },
+            "path_pre": { "default": null, "required": false, "description": "Path to precipitation input file" },
+            "path_pet": { "default": null, "required": false, "description": "Path to potential evapotranspiration input file" },
             "path_lai": { "default": null, "required": false, "description": "Path to leaf area index file" },
             "path_savi": { "default": null, "required": false, "description": "Path to soil-adjusted vegetation index file" },
             "path_kc": { "default": null, "required": false, "description": "Path to crop coefficient file" }
         },
 
         "WATER_BODIES": {
-            "path_lake_depth": { "default": "HAD_globathymetry_utm.asc", "required": true, "description": "Path to lake depth file" },
-            "path_pnd_hmax": { "default": "HAD_ali2024_ponds_max_depth_utm_no_lakes.asc", "required": true, "description": "Path to maximum pond depth file" },
-            "path_pnd_Amax": { "default": "HAD_ali2024_ponds_max_area_utm_no_lakes.asc", "required": true, "description": "Path to maximum pond area file" }
+            "path_lake_depth": { "default": null, "required": false, "description": "Path to lake depth file" },
+            "path_pnd_hmax": { "default": null, "required": false, "description": "Path to maximum pond depth file" },
+            "path_pnd_Amax": { "default": null, "required": false, "description": "Path to maximum pond area file" }
         },
 
         "INTERCEPTION": {
-            "path_veg_rp_extinction_depth": { "default": "HAD_rootdepth_stocker_2023_filled.asc", "required": true, "description": "Path to extinction depth for riparian vegetation" }
+            "path_veg_rp_extinction_depth": { "default": null, "required": false, "description": "Path to extinction depth for riparian vegetation" }
         },
 
         "OUTPUT": {
-            "path_out_sz": { "default": "HAD_dryp_station_utm.csv", "required": true, "description": "Output path for saturated zone data" },
-            "path_out_uz": { "default": "HAD_dryp_station_utm.csv", "required": true, "description": "Output path for unsaturated zone data" },
-            "path_out_oz": { "default": "HAD_dryp_station_utm.csv", "required": true, "description": "Output path for other zone data" },
-            "path_output": { "default": "/home/cuwalid/training/forecast/regional/outputs", "required": true, "description": "Main output directory" },
-            "path_setting": { "default": "input/dryp_settings.json", "required": true, "description": "Path to settings file" },
-            "path_projection": { "default": "HAD_projection.dwapm", "required": true, "description": "Path to projection file" }
+            "path_out_sz": { "default": null, "required": false, "description": "Output path for saturated zone data" },
+            "path_out_uz": { "default": null, "required": false, "description": "Output path for unsaturated zone data" },
+            "path_out_oz": { "default": null, "required": false, "description": "Output path for other zone data" },
+            "path_output": { "default": null, "required": false, "description": "Directory to place ouput" },
+            "path_setting": { "default": null, "required": false, "description": "Path to settings file" },
+            "path_projection": { "default": null, "required": false, "description": "Path to projection file" }
         }
     },
     "dryp_settings": {
@@ -133,17 +133,17 @@ const jsonConfigurations = {
             "start_date": {
                 "default": "2024 3 1",
                 "required": true,
-                "description": "Day of the year that the model should start from"
+                "description": "Day of the year that the model should start from using format YYYY MM DD"
             },
             "end_date": {
                 "default": "2024 5 30",
                 "required": true,
-                "description": "Day of the year that the model should end at"
+                "description": "Day of the year that the model should end at using format YYYY MM DD"
             }
         },
         "PROJECTION": {
             "default": "+proj=laea +lat_0=5 +lon_0=20 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
-            "required": true,
+            "required": false,
             "description": "Projection system used for spatial calculations"
         },
         "TIMESTEP_SETTINGS": {
