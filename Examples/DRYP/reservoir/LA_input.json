@@ -1,0 +1,34 @@
+{
+
+    "model_name": "Lake_sim_0",
+	"path_input": "reservoir/input/",
+	
+    "TERRAIN": {
+        "path_dem": "LA_dem_lakes.asc",
+        "path_fdl": "LA_flowdir.asc",
+        "path_riv_len": "LA_riv1.asc",
+        "path_riv_width": "LA_channel_width.asc",
+        "path_riv_elev": "LA_dem.asc"
+    },
+    "SATURATED": {
+        "path_sz_wte": "LA_ini_wte.asc",
+        "path_sz_bc_head": "LA_CHB.asc",
+        "path_sz_bottom": "LA_botb.asc"
+    },
+	"WATER_BODIES": {
+        "path_lake_depth": "LA_bathymetry.asc"
+	},
+
+    "METEO": {
+        "path_pre": "reservoir/input/Pre_60m_00_05_sin.csv",
+        "path_pet": "reservoir/input/Pre_60m_00_05_sin.csv"
+    },
+    
+	"OUTPUT": {
+        "path_out_sz": "reservoir/input/LA_points.csv",
+        "path_out_uz": "reservoir/input/LA_points.csv",
+        "path_out_oz": "reservoir/input/LA_points.csv",
+        "path_output": "reservoir/result",
+        "path_setting":"reservoir/LA_par_setting.json"
+    }
+}

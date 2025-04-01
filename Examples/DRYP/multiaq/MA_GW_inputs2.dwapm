@@ -1,0 +1,20 @@
+GROUNDWATER
+Additional parameter a for Aquifer--------------(1):
+../multiaq/input/MA_botu1.asc
+Additional parameter b for Aquifer--------------(3):
+none
+SECOND LAYER PARAMETERS ============================
+Bottom elevation second layer ------------------(6):
+none
+Hydraulic conductivity second layer ------------(8):
+none
+Specific yield second layer -------------------(10):
+none
+Specific storage second layer -----------------(12):
+none
+Inital head conditions second layer------------(14):
+none
+Map of aquifer type ---------------------------(16):
+../multiaq/input/MA_aqtype2.asc
+Lake maximum water elevation ------------------(18):
+none

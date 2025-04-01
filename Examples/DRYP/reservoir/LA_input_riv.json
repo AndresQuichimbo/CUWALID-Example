@@ -1,0 +1,45 @@
+{
+
+    "model_name": "Dams_1000ma",
+	
+	"path_input": "Dams/input/",
+
+    "TERRAIN": {
+        "path_dem": "LA_dem_lakes.asc",
+        "path_riv_width": "LA_channel_width.asc",
+        "path_riv_elev": "LA_dem.asc"
+    },
+    "SATURATED": {
+        "path_sz_wte": "Dams_1000m_avg_wte_ini.asc",
+        "path_sz_bc_head": "LA_CHB.asc",
+        "path_sz_bottom": "LA_botb.asc"
+    },
+    "METEO": {
+        "path_pre": "Pre_60m_00_05_sin.csv",
+        "path_pet": "Pre_60m_00_05_sin.csv",
+        "path_TSWB": "WB_abstractions1.csv"
+    },
+    "OUTPUT": {
+        "path_out_sz": "LA_points.csv",
+        "path_out_uz": "LA_points.csv",
+        "path_out_oz": "LA_points.csv",
+        "path_output": "Dams/result",
+        "path_setting": "Dams/LAr_par_setting.json"
+    },
+    "WATER_BODIES": {
+        "path_lake_depth": "LA_bathymetry.asc",
+		"path_wb_bc_flux": "LA_dam_abstractions1.csv"
+    },
+    "INTERCEPTION": {
+      "path_veg_hs_savi": "DynaVeg/input/SAVI_mes.csv",
+      "path_veg_hs_par_a": "DynaVeg/input/DV_lai_a.asc",
+      "path_veg_hs_par_b": "DynaVeg/input/DV_lai_b.asc",
+      "path_veg_hs_savi_min": "DynaVeg/input/DV_savi_min.asc",
+      "path_veg_hs_savi_max": "DynaVeg/input/DV_savi_max.asc",
+      "path_veg_rp_par_a": "DynaVeg/input/DV_lai_a.asc",
+      "path_veg_rp_par_b": "DynaVeg/input/DV_lai_b.asc",
+      "path_veg_rp_savi_min": "DynaVeg/input/DV_savi_min.asc",
+      "path_veg_rp_savi_max": "DynaVeg/input/DV_savi_max.asc",
+      "path_veg_rp_tap_depth": "DynaVeg/input/DV_tap_depth.asc"
+   }
+}

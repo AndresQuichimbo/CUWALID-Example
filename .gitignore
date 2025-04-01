@@ -11,3 +11,8 @@ storm_output/
 logs/
 forecast/
 historical/
+Example/DRYP/DynaVeg/result/
+Example/DRYP/GW_1D/result/
+Example/DRYP/multiaq/result/
+Example/DRYP/ponds/result/
+Example/DRYP/reservoir/result/

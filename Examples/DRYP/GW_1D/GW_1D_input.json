@@ -1,0 +1,41 @@
+{
+
+    "model_name": "GW",
+	
+	"path_input": "GW_1D/input/",
+
+    "TERRAIN": {
+        "path_dem": "GW_1D_dem_m.asc",
+        "path_fdl": "GW_1D_flowdir_m.asc",
+        "path_mask": "GW_1D_mask_m.asc",
+        "path_riv_len": "GW_1D_riv_m.asc"
+    },
+    "UNSATURATED": {
+        "path_uz_theta_sat": "GW_1D_rawls_ne.txt",
+        "path_uz_theta_res": "GW_1D_rawls_theta_r.txt",
+        "path_uz_theta_awc": "GW_1D_rawls_awc.txt",
+        "path_uz_theta_wp": "GW_1D_rawls_wp.txt",
+        "path_uz_root": "GW_1D_depth_m.asc",
+        "path_uz_lambda": "GW_1D_rawls_n.txt",
+        "path_uz_psi": "GW_1D_rawls_phi.txt",
+        "path_uz_ksat": "GW_1D_rawls_ks0.txt",
+        "path_uz_sigmaksat": "GW_1D_rawls_sigma_ks.txt"
+    },
+    "SATURATED": {
+        "path_sz_mask": "GW_1D_mask_m.asc",
+        "path_sz_ksat": "GW_1D_rawls_ks0.txt",
+        "path_sz_wte": "GW_1D_wte_ini_2.asc",
+        "path_sz_bc_head": "GW_1D_CHB1.asc"
+    },
+    "METEO": {
+        "path_pre": "Pre_60m_00_05_sin.csv",
+        "path_pet": "Pre_60m_00_05_sin.csv"
+    },
+    "OUTPUT": {
+        "path_out_sz": "GW_1D_Flumes_points.csv",
+        "path_out_uz": "GW_1D_SM_points.csv",
+        "path_out_oz": "GW_1D_well_point_m.csv",
+        "path_output": "GW_1D/result",
+        "path_setting": "GW_1D/GW_1D_setting.json"
+    }
+}

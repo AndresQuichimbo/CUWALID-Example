@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUWALID Input Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CUWALID Input Helper</h1>
+        <p>Welcome to the CUWALID Input Helper! This tool allows you to easily generate JSON configurations for running the different aspects of CUWALID.</p>
+        <p>For running the main CUWALID system, you will need all of the json files. It is important to note that when running the system, the CUWALID input json file will override the necessary settings within each model. For example, if 'year' is set to '2025' in the CUWALID json, but '2017' in the storm input, the storm input will be overrided.</p>
+        <div class="intro">
+
+            <p><strong>How it works:</strong></p>
+            <ul>
+                <li>Select the component you would like the input for at the top.</li>
+                <li>Fill out the form fields as required.</li>
+                <li>Required fields are marked in <span class="required-label">red</span>, while optional fields are in black.</li>
+                <li>Once completed, you can view the preview of your json and export it.</li>
+            </ul>
+        </div>
+
+        <div class="input-type-container">
+            <label for="jsonType">Select the type of input you would like to create:</label>
+            <select id="jsonType">
+                <option value="cuwalid">CUWALID</option>
+                <option value="dryp">DRYP</option>
+                <option value="dryp_settings">DRYP Settings</option>
+                <option value="storm">Storm</option>
+                <option value="stopet">stoPET</option>
+                <option value="hydro_forecast">Hydro Forecast</option>
+                <option value="impact_forecast">Impact Forecast</option>
+            </select>
+        </div>    
+        
+        <div class="load-json-container">
+            <label for="jsonUpload" class="json-upload-label">
+                Optionally, you can upload a previous input file and modify it from there:
+            </label>
+            <input type="file" id="jsonUpload" accept=".json">
+        </div>
+        
+
+        <div id="formContainer" class="nested-section"></div>
+        <label for="filename">Output Filename:</label>
+        <input type="text" id="filename" placeholder="Filename will auto-fill" />
+        <button onclick="exportJSON()">Export JSON</button>
+
+        <h3>JSON Preview</h3>
+        <pre class="json-output" id="jsonOutput">Loading JSON data...</pre>
+    </div>
+
+    <script src="configurations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

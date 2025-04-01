@@ -1,0 +1,44 @@
+{
+    "run_historical": false,
+    "run_forecast": false,
+    "run_plotting": false,
+	"multi_files": true,
+	
+	"historical": {
+		"model_name": "HAD_IMERGcv_input_sim85_test",
+		"model_path": "/home/cuwalid/training/historical/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/historical/regional/postpp/"
+	},
+	
+	"forecasting": {
+		"model_name": "MAM_2025_realization",
+		"model_path": "/home/cuwalid/training/forecast/regional/outputs/",
+		"postpp_path": "/home/cuwalid/training/forecast/regional/postpp/"
+	},
+
+	"threshold_path": "/home/cuwalid/training/historical/regional/postpp/netcdf/",
+	
+    "season": ["MAM"],
+    "start_year": 2025,
+    "end_year": 2025,
+    "year": 2025,
+	
+	"variables": {
+        "pre": true,
+        "pet": true,
+        "aet": true,
+        "tht": true,
+        "egw": true,
+        "inf": false,
+        "run": false,
+        "rch": true,
+        "fch": true,
+        "gdh": true,
+        "dis": true,
+        "tls": false,
+        "wte": true,
+        "twsc": true,
+        "wrsi": false,
+		"flood": true
+    }
+}
