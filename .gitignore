@@ -1,4 +1,5 @@
 venv
+input/cache
 input_template/cache
 .vscode/
 stopet_output
@@ -11,8 +12,8 @@ storm_output/
 logs/
 forecast/
 historical/
-Example/DRYP/DynaVeg/result/
-Example/DRYP/GW_1D/result/
-Example/DRYP/multiaq/result/
-Example/DRYP/ponds/result/
-Example/DRYP/reservoir/result/
+Examples/DRYP/DynaVeg/result/
+Examples/DRYP/GW_1D/result/
+Examples/DRYP/multiaq/result/
+Examples/DRYP/ponds/result/
+Examples/DRYP/reservoir/result/
