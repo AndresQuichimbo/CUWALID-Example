@@ -1,13 +1,13 @@
 {
 
-    "model_name": "Dams_1000ma",
+    "model_name": "reservoir",
 	
-	"path_input": "Dams/input/",
+	"path_input": "reservoir/input/",
 
     "TERRAIN": {
         "path_dem": "LA_dem_lakes.asc",
         "path_riv_width": "LA_channel_width.asc",
-        "path_riv_elev": "LA_dem.asc"
+        "path_riv_elev": "LA_dem1.asc"
     },
     "SATURATED": {
         "path_sz_wte": "Dams_1000m_avg_wte_ini.asc",
@@ -23,8 +23,8 @@
         "path_out_sz": "LA_points.csv",
         "path_out_uz": "LA_points.csv",
         "path_out_oz": "LA_points.csv",
-        "path_output": "Dams/result",
-        "path_setting": "Dams/LAr_par_setting.json"
+        "path_output": "reservoir/result",
+        "path_setting": "reservoir/LAr_par_setting.json"
     },
     "WATER_BODIES": {
         "path_lake_depth": "LA_bathymetry.asc",

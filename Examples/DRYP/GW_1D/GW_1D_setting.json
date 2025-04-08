@@ -1,7 +1,7 @@
 {
     "SIMULATION_PERIOD": {
         "start_date": "2000 1 1",
-        "end_date": "2000 2 3"
+        "end_date": "2001 1 1"
     },
     "COMPONENTS": {
         "method_inf": 1,
@@ -12,7 +12,7 @@
         "output_csv": true,
         "output_grid": true,
 		"output_dt_csv": "1H",
-		"output_dt": "1H"
+		"output_dt": "1D"
     },
     "GLOBAL_FACTORS": {
         "uz_kdroot": "1.0",

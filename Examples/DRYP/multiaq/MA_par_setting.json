@@ -1,7 +1,7 @@
 {
     "SIMULATION_PERIOD": {
         "start_date": "2000 1 1",
-        "end_date": "2000 9 30"
+        "end_date": "2002 1 1"
     },
     "TIMESTEP_SETTINGS": {
         "dt_of": "60",
@@ -15,8 +15,8 @@
     "OUTPUT": {
         "output_csv": true,
         "output_grid": true,
-		"output_dt_csv": "1D",
-		"output_dt": "1D"
+		"output_dt_csv": "1H",
+		"output_dt": "1M"
     },
     "GLOBAL_FACTORS": {
         "uz_kdt": "1.0",

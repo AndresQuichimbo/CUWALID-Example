@@ -17,3 +17,17 @@ Examples/DRYP/GW_1D/result/
 Examples/DRYP/multiaq/result/
 Examples/DRYP/ponds/result/
 Examples/DRYP/reservoir/result/
+/__pycache__
+/.ipynb_checkpoints
+/Training/Forecasting/__pycache__
+/Forecasting/src/__pycache__
+/Training/Forecasting/scripts/__pycache__
+/Training/Forecasting/.ipynb_checkpoints
+/Training/DRYP/.ipynb_checkpoints
+/Training/DRYP/Intermediate/.ipynb_checkpoints
+/Training/DRYP/intro/.ipynb_checkpoints
+/Training/DRYP/catchment/.ipynb_checkpoints
+/Training/DRYP/regional/.ipynb_checkpoints
+/Training/stoPET/__pycache__
+/Training/Python/.ipynb_checkpoints
+/Training/STORM/__pycache__

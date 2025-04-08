@@ -9,6 +9,7 @@
     },
     "COMPONENTS": {
         "method_inf": "1",
+        "run_gw" : true,
         "method_gw": "0"
     },
 	"READING": {
@@ -27,7 +28,7 @@
         "output_csv": true,
         "output_grid": true,
 		"output_dt_csv": "1D",
-		"output_dt": "1D"
+		"output_dt": "1M"
     },
     "GLOBAL_FACTORS": {
         "uz_kdt": "1.0",
