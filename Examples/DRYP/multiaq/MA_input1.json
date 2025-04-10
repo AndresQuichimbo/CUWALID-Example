@@ -1,30 +1,29 @@
 {
 
-    "model_name": "MA_10m1",
+    "model_name": "MA_maq",
+
+	"path_input": "multiaq/input/",
 
     "TERRAIN": {
-        "path_dem": "multiaq/input/MA_dem.asc",
-        "path_riv_len": "multiaq/input/MA_riv.asc"
+        "path_dem": "MA_dem.asc",
+        "path_riv_len": "MA_riv.asc"
     },
     "SATURATED": {
-        "path_sz_ksat": "multiaq/input/MA_ksatu.asc",
-        "path_sz_wte": "multiaq/input/MA_ini.asc",
-        "path_sz_bc_head": "multiaq/input/MA_CHB1.asc",
-        "path_sz_bottom": "multiaq/input/MA_botb.asc"
+        "path_sz_ksat": "MA_ksatu.asc",
+        "path_sz_wte": "MA_ini.asc",
+        "path_sz_bc_head": "MA_CHB1.asc",
+        "path_sz_bottom": "MA_botb.asc",
+		"path_sz_type": "MA_aqtype1.asc"
     },
     "METEO": {
-        "path_pre": "multiaq/input/Pre_60m_00_05_sin.csv",
-        "path_pet": "multiaq/input/Pre_60m_00_05_sin.csv"
+        "path_pre": "mLA_time_series.csv",
+        "path_pet": "mLA_time_series.csv"
     },
     "OUTPUT": {
-        "path_out_sz": "multiaq/input/MA_point.csv",
-        "path_out_uz": "multiaq/input/MA_point.csv",
-        "path_out_oz": "multiaq/input/MA_point.csv",
+        "path_out_sz": "MA_point.csv",
+        "path_out_uz": "MA_point.csv",
+        "path_out_oz": "MA_point.csv",
         "path_output": "multiaq/result",
         "path_setting": "multiaq/MA_par_settingv2.json"
-    },
-    "GROUNDWATER": {
-        "path_gw_depth": "multiaq/input/MA_botu1.asc",
-        "path_gw_type": "multiaq/input/MA_aqtype1.asc"
     }
 }

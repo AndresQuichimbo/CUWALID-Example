@@ -37,6 +37,7 @@ fname = [
 #"Dams/LA_input_riv.json",
 #"GW_1D/GW_1D_input.json",
 #"multiaq/MA_input.json",
+"multiaq/MA_input1.json",
 ]
 for ifname in fname:
 	run_DRYP(ifname)
