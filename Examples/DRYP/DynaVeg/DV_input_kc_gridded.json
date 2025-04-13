@@ -1,0 +1,41 @@
+{
+
+    "model_name": "DV_gridded_kc",
+
+	"path_input": "DynaVeg/input/",
+
+    "TERRAIN": {
+        "path_dem": "DV_dem.asc",
+        "path_riv_len": "DV_riv.asc"
+    },
+    "UNSATURATED": {
+        "path_uz_theta_sat": "DV_theta_sat_utm_m1.asc",
+        "path_uz_theta_awc": "DV_theta_awc_utm1.asc",
+        "path_uz_theta_wp": "DV_theta_wp_utm1.asc",
+        "path_uz_root": "DV_root_depth1.asc",
+        "path_uz_lambda": "DV_lambdas_utm_m1.asc",
+        "path_uz_psi": "DV_psi_utm_m1.asc",
+        "path_uz_ksat": "DV_ksat_utm_m1.asc",
+        "path_uz_theta": "DV_theta_wp_utm_m1.csv"
+    },
+    "SATURATED": {
+        "path_sz_ksat": "DV_ksatb1.asc",
+        "path_sz_wte": "DV_ini_wte1.asc",
+        "path_sz_bc_head": "DV_CHB1.asc",
+        "path_sz_bottom": "DV_botb1.asc"
+    },
+    "METEO": {
+        "path_pre": "Pre_60m_00_05_sin.csv",
+        "path_pet": "Pre_60m_00_05_sin.csv",
+		"path_kc": "DV_time_series_kc_MM.nc",
+		"path_TSav": "DV_time_series_av.nc",
+		"path_lai": "DV_time_series_LAI_MM.nc"
+    },
+    "OUTPUT": {
+        "path_out_sz": "DV_points.csv",
+        "path_out_uz": "DV_points.csv",
+        "path_out_oz": "DV_points.csv",
+        "path_output": "DynaVeg/result",
+        "path_setting": "DynaVeg/DV_par_setting_kc_gridded.json"
+    }
+}

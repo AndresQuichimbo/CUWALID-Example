@@ -1,0 +1,71 @@
+{
+    "model_name": "HAD_IMERGcv_vg_sim83_2000",
+	"path_input": "",
+    
+    "TERRAIN": {
+        "path_dem": "/home/cuwalid/training/historical/regional/model/input/HAD_DEM_utm_mm.asc",
+        "path_Qo": "/home/cuwalid/training/historical/regional/outputs/HAD_IMERGcv_sim83_2022_avg_Q_ini.asc",
+        "path_fdl": "/home/cuwalid/training/historical/regional/model/input/HAD_flowdir_land_utm.asc",
+        "path_riv_decay": "/home/cuwalid/training/historical/regional/model/input/HAD_decay_utm_v2.asc",
+        "path_mask": "/home/cuwalid/training/historical/regional/model/input/HAD_mask_utm_m.asc",
+        "path_riv_len": "/home/cuwalid/training/historical/regional/model/input/HAD_riv_length_utm_v2.asc",
+        "path_riv_width": "/home/cuwalid/training/historical/regional/model/input/HAD_width_utm_v2.asc",
+        "path_riv_elev": "/home/cuwalid/training/historical/regional/model/input/HAD_riv_elev_15pc_utm_m_sm_v3.asc"
+    },
+    "VEGETATION": {
+        "path_veg_kc": null,
+        "path_veg_lulc": null
+    },
+    "UNSATURATED": {
+        "path_uz_theta_sat": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_sat_utm_m.asc",
+        "path_uz_theta_awc": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_awc_utm.asc",
+        "path_uz_theta_wp": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_wp_utm.asc",
+        "path_uz_rootdepth": "/home/cuwalid/training/historical/regional/model/input/HAD_rootdepth_stocker_2023_filled_factor.asc",
+        "path_uz_lambda": "/home/cuwalid/training/historical/regional/model/input/HAD_lambdas_utm_m.asc",
+        "path_uz_psi": "/home/cuwalid/training/historical/regional/model/input/HAD_psi_utm_m.asc",
+        "path_uz_ksat": "/home/cuwalid/training/historical/regional/model/input/HAD_ksat_utm_zhung.asc",
+        "path_uz_theta": "/home/cuwalid/training/historical/regional/outputs/HAD_IMERGcv_sim83_2022_avg_tht_ini.asc"
+    },
+    "RIPARIAN": {
+        "path_rp_theta_sat": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_sat_utm_m.asc",
+        "path_rp_theta_awc": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_awc_utm.asc",
+        "path_rp_theta_wp": "/home/cuwalid/training/historical/regional/model/input/HAD_theta_wp_utm.asc",
+        "path_rp_rootdepth": "/home/cuwalid/training/historical/regional/model/input/HAD_rootdepth_utm_m.asc",
+        "path_rp_lambda": "/home/cuwalid/training/historical/regional/model/input/HAD_lambdas_utm_m.asc",
+        "path_rp_psi": "/home/cuwalid/training/historical/regional/model/input/HAD_psi_utm_m.asc",
+        "path_rp_ksat": "/home/cuwalid/training/historical/regional/model/input/HAD_ksat_utm_m.asc",
+        "path_rp_theta": "/home/cuwalid/training/historical/regional/outputs/HAD_IMERGcv_sim83_2022_avg_tht_rp_ini.asc"
+    },
+    "SATURATED": {
+        "path_sz_ksat": "/home/cuwalid/training/historical/regional/model/input/HAD_ksat_D2E_ksat_sim_85_utm.asc",
+        "path_sz_sy": "/home/cuwalid/training/historical/regional/model/input/HAD_D2E_sy_ghlymps_utm_mmm.asc",
+        "path_sz_wte": "/home/cuwalid/training/historical/regional/model/HAD_IMERGcu_sim83_2022_avg_wte_ini.asc",
+        "path_sz_bc_head": "/home/cuwalid/training/historical/regional/model/input/HAD_CHBm_utm.asc",
+        "path_sz_bottom": "/home/cuwalid/training/historical/regional/model/input/HAD_botb.asc",
+        "path_sz_depth": "/home/cuwalid/training/historical/regional/model/input/HAD_BDdepth_utm_m_sm_v2.asc",
+        "path_sz_type": "/home/cuwalid/training/historical/regional/model/input/HAD_globathymetry_utm.asc"
+    },
+    "METEO": {
+        "path_pre": "input/input_files/Ens_Prec_2monLead_MAM_Prob_LogitWVGEnsRegrCPT-avgRaw2025.nc",
+        "path_pet": "input/input_files/Ens_Tref_2monLead_MAM_Raw_2025.nc",
+		"path_lai": null,
+		"path_savi": null,
+		"path_kc": null
+    },
+	"WATER_BODIES": {
+      "path_lake_depth": "/home/cuwalid/training/historical/regional/model/input/HAD_globathymetry_utm.asc",
+      "path_pnd_hmax": "/home/cuwalid/training/historical/regional/model/input/HAD_ali2024_ponds_max_depth_utm_no_lakes.asc",
+      "path_pnd_Amax": "/home/cuwalid/training/historical/regional/model/input/HAD_ali2024_ponds_max_area_utm_no_lakes.asc"
+	},
+    "INTERCEPTION": {
+       "path_veg_rp_extinction_depth": "/home/cuwalid/training/historical/regional/model/input/HAD_rootdepth_stocker_2023_filled.asc"
+    },
+    "OUTPUT": {
+        "path_out_sz": "/home/cuwalid/training/historical/regional/model/input/HAD_dryp_station_utm.csv",
+        "path_out_uz": "/home/cuwalid/training/historical/regional/model/input/HAD_dryp_station_utm.csv",
+        "path_out_oz": "/home/cuwalid/training/historical/regional/model/input/HAD_dryp_station_utm.csv",
+        "path_output": "/home/cuwalid/training/forecast/regional/outputs",
+        "path_setting": "input/dryp_settings.json",
+        "path_projection": "/home/cuwalid/training/historical/regional/model/HAD_projection.dwapm"
+    }
+}

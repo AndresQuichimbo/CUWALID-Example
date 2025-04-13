@@ -1,0 +1,28 @@
+{
+    "SIMULATION_PERIOD": {
+        "start_date": "2000 1 1",
+        "end_date": "2001 1 1"
+    },
+    "COMPONENTS": {
+        "method_inf": 1,
+        "run_gw" : true,
+        "method_gw": 2
+	},
+    "OUTPUT": {
+        "output_csv": true,
+        "output_grid": true,
+		"output_dt_csv": "1H",
+		"output_dt": "1D"
+    },
+    "GLOBAL_FACTORS": {
+        "uz_kdroot": "1.0",
+        "uz_kawc": "1.0",
+        "uz_kkast": "1.0",
+        "uz_ksigma": "1.0",
+        "riv_kksat": "1.0",
+        "riv_kdecay": "1",
+        "riv_kwidth": "1.0",
+        "sz_kksat": "1.0",
+        "sz_ksy": "1.0"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "create_dataset": false,
+    "create_table": true,
+    "create_map": true,
+    "plot_scales": ["County"],
+    "country": ["ethiopia", "somalia", "kenya"],
+    "place_names": null,
+    "seasons": ["MAM"],
+    "water_status": ["Flood", "Surface", "Groundwater", "Crop", "Pasture"],
+    "year": 2025,
+    "language": ["English","Swahili", "Amharic", "Oromo", "Somali"],
+    "output_dir": "",
+    "netcdf_path": null,
+    "model_name": "MAM_2025_realization",
+    "parameter_dataset_list": "/home/cuwalid/training/forecasting_model_files/parameters_dataset_list_ICPAC.json"
+}

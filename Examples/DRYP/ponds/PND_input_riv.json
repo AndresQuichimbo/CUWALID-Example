@@ -1,0 +1,33 @@
+{
+
+    "model_name": "PND_100m",
+	
+	"path_input": "ponds/input/",
+
+    "TERRAIN": {
+        "path_dem": "PD_dem_lakes.asc",
+        "path_riv_width": "PD_channel_width.asc",
+        "path_riv_elev": "PD_dem.asc"
+    },
+    "SATURATED": {
+        "path_sz_wte": "PD_ini_wte.asc",
+        "path_sz_bc_head": "PD_CHB.asc",
+        "path_sz_bottom": "PD_botb.asc"
+    },
+    "METEO": {
+        "path_pre": "Pre_60m_00_05_sin.csv",
+        "path_pet": "Pre_60m_00_05_sin.csv"
+    },
+    "OUTPUT": {
+        "path_out_sz": "PD_points.csv",
+        "path_out_uz": "PD_points.csv",
+        "path_out_oz": "PD_points.csv",
+        "path_output": "ponds/result",
+        "path_setting": "ponds/PND_par_setting.json"
+    },
+
+   "WATER_BODIES": {
+      "path_pnd_hmax": "PD_ponds_Hmax.asc",
+      "path_pnd_Amax": "PD_ponds_Amax.asc"
+   }
+}

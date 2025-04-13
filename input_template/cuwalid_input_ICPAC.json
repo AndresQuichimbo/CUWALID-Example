@@ -1,0 +1,42 @@
+{
+    "run_STORM": true,
+    "run_stoPET": true,
+    "run_DRYP": true,
+	"run_WaterCast": true,
+	"sim_in_parallel": true,
+	
+	"forecasting_model_name": "MAM_2025_realization",
+	
+	"historical": {
+		"model_name": "historical_model_name",
+		"main_path": "main_path",
+		"model_path": "model_path",
+		"postpp_path": "postpp_path"
+	},
+	
+	"output_dir": "",
+
+	"Tercile_Pre_path": "input/input_files/Ens_Prec_2monLead_MAM_Prob_LogitWVGEnsRegrCPT-avgRaw2025.nc",
+	"Tercile_Tem_path": "input/input_files/Ens_Tref_2monLead_MAM_Raw_2025.nc",
+		
+    "season": ["MAM"],
+    "year": 2022,
+	"NSIM": 30,
+	
+	"MODELS": {
+		"DRYP": {
+			"input":"input/dryp_input.json",
+			"settings": "input/dryp_settings.json"
+			},
+		"STORM": {
+			"input":"input/storm_input_ICPAC.json"
+			},
+		"stoPET": {
+			"input":"input/stopet_input_ICPAC.json"
+			},
+		"WaterCast": {
+			"HyCast": "input/forecast_input.json",
+			"ImCast": "input/impact_forecast_input.json"
+			}
+	}
+}

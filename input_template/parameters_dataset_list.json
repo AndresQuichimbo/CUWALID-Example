@@ -1,0 +1,60 @@
+{
+	"name_short_country" : {
+		"kenya":"KE",
+		"ethiopia":"ET",
+		"somalia":"SO"
+	},
+	"name_field_county_shp" : {
+		"kenya":"ADM1_EN",
+		"ethiopia":"NAME_2",
+		"somalia":"NAME"
+	},
+	"code_county_shp" : {
+		"kenya":"CODE",
+		"ethiopia":"OBJECTID",
+		"somalia":"REGN_NO"
+	},
+	"name_county_shp" : {
+		"kenya":"ADM1_EN",
+		"ethiopia":"NAME_2",
+		"somalia":"NAME"
+	},
+	"name_field_shp" : {
+		"Zoom": "IEBC_WARDS",
+		"Ward": "IEBC_WARDS",
+		"County": null,
+		"Country": "NAME"
+	},
+	"shapefile_country_dic" : {
+		"region": "forecasting_dataset/HAD/gis/Horn_Africa/Horn_africa_contry.shp"
+	},
+	"shapefile_level_1_dic" : {
+		"kenya": "D:/HAD/forecasting_dataset/kenya/ken_admbnda_adm1_iebc_20191031.shp",
+		"ethiopia": "D:/HAD/forecasting_dataset/ethiopia/Export_admin2.shp",
+		"somalia": "D:/HAD/forecasting_dataset/somalia/somalia_region_wgs84.shp"
+	},
+	"shapefile_level_2_dic" : {
+		"kenya": null,
+		"ethiopia": null,
+		"somalia": "D:/HAD/forecasting_dataset/somalia/som_admbnda_adm2_undp.shp"
+	},
+	"shapefile_wards_dic" : {
+		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya_wards/Kenya wards.shp"
+	},
+	"fname_places_list_file" : {
+		"kenya": "D:/HAD/forecasting_dataset/kenya/kenya-county/KE_Kenya_county.csv",
+		"ethiopia": "D:/HAD/forecasting_dataset/ethiopia/ET_Ethiopia_region.csv",
+		"somalia": "D:/HAD/forecasting_dataset/somalia/SO_Somalia_region.csv"
+	},
+	"fname_mask_dic" : {
+		"Soil": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Evaporation": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Groundwater": "D:/HAD/model/input/HAD_mask_utm_m.asc",
+		"Surface": "D:/HAD/model/input/HAD_riv_length_utm.asc",
+		"Flood": "D:/HAD/model/input/HAD_riv_length_utm.asc",
+		"Crop": "D:/HAD/model/input/HAD_maks_crops.asc",
+		"Pasture": "D:/HAD/model/input/HAD_maks_browse.asc"
+	},
+	"rivers_shape_path" : "forecasting_dataset/NaturalEarth/ne_10m_rivers_lake_centerlines.shp",
+	"default_netcdf" : "forecasting_dataset/HAD/output/HAD_IMERGba_sim0_YYYY_grid.nc"
+}

@@ -1,0 +1,30 @@
+{
+
+    "model_name": "MA_10m6",
+
+    "TERRAIN": {
+        "path_dem": "multiaq/input/MA_dem.asc",
+        "path_riv_len": "multiaq/input/MA_riv.asc"
+    },
+    "SATURATED": {
+        "path_sz_ksat": "multiaq/input/MA_ksatu.asc",
+        "path_sz_wte": "multiaq/input/MA_ini.asc",
+        "path_sz_bc_head": "multiaq/input/MA_CHB1.asc",
+        "path_sz_bottom": "multiaq/input/MA_botb.asc"
+    },
+    "METEO": {
+        "path_pre": "multiaq/input/Pre_60m_00_05_sin.csv",
+        "path_pet": "multiaq/input/Pre_60m_00_05_sin.csv"
+    },
+    "OUTPUT": {
+        "path_out_sz": "multiaq/input/MA_point.csv",
+        "path_out_uz": "multiaq/input/MA_point.csv",
+        "path_out_oz": "multiaq/input/MA_point.csv",
+        "path_output": "multiaq/result",
+        "path_setting": "multiaq/MA_par_settingv2.json"
+    },
+    "GROUNDWATER": {
+        "path_gw_depth": "multiaq/input/MA_botu1.asc",
+        "path_gw_type": "multiaq/input/MA_aqtype6.asc"
+    }
+}
