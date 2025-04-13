@@ -11,3 +11,6 @@ storm_output/
 logs/
 forecast/
 historical/
+test_output/
+test.py
+app_output/
