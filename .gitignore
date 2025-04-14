@@ -12,6 +12,9 @@ storm_output/
 logs/
 forecast/
 historical/
+test_output/
+test.py
+app_output/
 Examples/DRYP/DynaVeg/result/
 Examples/DRYP/GW_1D/result/
 Examples/DRYP/multiaq/result/
